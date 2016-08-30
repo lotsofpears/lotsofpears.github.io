@@ -52,7 +52,9 @@ body .demo-blog {
       -ms-flex-negative: 0;
           flex-shrink: 0;
 }
-
+.fixed{
+    position: fixed ! important;
+}
 .demo-blog.mdl-layout .mdl-layout__content {
   padding-top: 230px;
   position: relative;
