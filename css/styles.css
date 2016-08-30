@@ -15,7 +15,7 @@ body::before {
        (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1.5),
        (max-width: 1024px) and (max-resolution: 1.5dppx) {
   body::before {
-    background-image: url('../Rhonda/assets/images/background.jpg');
+    background-image: url('images/background.jpg');
   }
 }
 @media (min-width: 513px)  and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5),
@@ -23,7 +23,7 @@ body::before {
        (min-width: 1025px) and (max-width: 2048px) and (-webkit-max-device-pixel-ratio: 1.5),
        (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx)  {
   body::before {
-    background-image: url('../Rhonda/assets/images/background.jpg');
+    background-image: url('images/background.jpg');
   }
 }
 @media (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1.5),
@@ -31,7 +31,7 @@ body::before {
        (min-width: 2049px) and (-webkit-max-device-pixel-ratio: 1.5),
        (min-width: 2049px) and (max-resolution: 1.5dppx) {
   body::before {
-    background-image: url('../Rhonda/assets/images/background.jpg');
+    background-image: url('images/background.jpg');
   }
 }
 body .demo-blog {
@@ -268,17 +268,17 @@ li{
   border-bottom-right-radius: 2px;
 }
 .demo-blog .teamStepps .mdl-card__media {
-  background-image: url('../Rhonda/assets/images/teamStepps.jpg');
+  background-image: url('images/teamStepps.jpg');
   position: relative;
   height: 200px;
 }
 .demo-blog .on-the-road-again .mdl-card__media {
-  background-image: url('../Rhonda/assets/images/puzzle.jpg');
+  background-image: url('images/puzzle.jpg');
   position: relative;
   height: 200px;
 }
 .demo-blog .shopping .mdl-card__media {
-  background-image: url('../Rhonda/assets/images/teamProblemSolving.jpg');
+  background-image: url('images/teamProblemSolving.jpg');
   height: 200px;
 }
 .demo-blog .demo-blog__posts > .demo-nav {
@@ -350,7 +350,7 @@ li{
   background-color: transparent;
 }
 .demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media {
-  background-image: url('../Rhonda/assets/images/hood.jpg');
+  background-image: url('images/hood.jpg');
   height: 280px;
 }
 .demo-blog--blogpost .comments {
@@ -513,7 +513,7 @@ li{
   z-index: 10;
 }
 .demo-blog .amazing .mdl-card__media {
-  background-image: url('../Rhonda/assets/images/leadership.jpg');
+  background-image: url('images/leadership.jpg');
   position: relative;
   height: 200px;
 }
