@@ -105,7 +105,6 @@ body .demo-blog {
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
-  cursor: pointer;
 }
 .demo-blog .mdl-card__media a,
 .demo-blog .mdl-card__title a {
@@ -183,7 +182,6 @@ li{
 }
 .demo-blog .meta > .meta__favorites .material-icons {
   font-size: 2em;
-  cursor: pointer;
   margin-left: 12px;
 }
 .demo-blog .mdl-card .meta.meta--fill {
@@ -251,6 +249,7 @@ li{
   bottom: 0;
   width: 100%;
   margin: 10px;
+  opacity: 0.8;
   text-align: center;
   background-color:  #f0aa89
 }
@@ -530,15 +529,12 @@ li{
   position: relative;
   height: 200px;
 }
-.demo-blog .minilogo {
-  width: 44px;
-  height: 44px;
-  background-image: url('../images/avatar.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 50%;
-  border-radius: 22px;
-  background-color: #F5F5F5;
+
+.demo-blog .DC .mdl-card__media {
+  background: url('../images/DC.jpg');
+  position: relative;
+  height: 320px;
+  width: 100%;
 }
 
 /* Fixes for IE 10 */
@@ -548,40 +544,12 @@ li{
   display: flex !important;
 }
 
-.social-btn {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  margin: 0 16px;
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-  opacity: 0.46;
-  border-radius: 2px;
-}
-.social-btn__twitter {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png');
-}
-.social-btn__blogger {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png');
-}
-.social-btn__gplus {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_gplus_black_24dp.png');
-}
-.social-btn__share {
-  color: rgba(0, 0, 0, 0.54);
-  background: transparent;
-}
-
-.demo-blog .mdl-mini-footer {
-  margin-top: 80px;
-  height: 120px;
-  padding: 40px;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-              -ms-grid-row-align: center;
-          align-items: center;
-  background-color: white;
-  box-sizing: border-box;
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('../images/loading.gif') 50% 50% no-repeat rgb(249,249,249);
 }
