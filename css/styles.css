@@ -45,7 +45,7 @@ body .teamStepCont {
   color: white;
   z-index: 9999;
 }
-.teamStepCont--blogpost .teamStepCont__posts > .mdl-card .mdl-card__media {
+.teamStepCont--blogpost .teamStepCont-blog__posts > .mdl-card .mdl-card__media {
   background-image: url('../images/hood.jpg');
   height: 280px;
 }
@@ -195,7 +195,20 @@ li{
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
+.demo-blog .demo-blog__posts {
+  padding-bottom: 100px ! important;
+  padding-top: 50px ! important;
+  max-width: 900px;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
 .middleDivider {
   bottom: 0;
   max-width: 100%;
