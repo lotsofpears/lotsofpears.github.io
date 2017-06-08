@@ -38,7 +38,7 @@ body::before {
 body .teamStepCont {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
-.teamStepCont--blogpost .demo-back {
+.teamStepCont--blogpost .teamStepCont-back {
   position: absolute;
   top: 16px;
   left: 16px;
