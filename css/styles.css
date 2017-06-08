@@ -10,6 +10,7 @@ body::before {
     top: 0;
     position: fixed;
 }
+
 @media (max-width: 512px)  and (-webkit-min-device-pixel-ratio: 1.5),
        (max-width: 512px)  and (min-resolution: 1.5dppx),
        (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1.5),
@@ -34,11 +35,31 @@ body::before {
     background-image: url('../images/background.jpg');
   }
 }
-body .teamStepCont-blog {
+body .teamStepCont {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
-
-.teamStepCont-blog .teamStepCont-blog__posts {
+.teamStepCont--blogpost .teamStepCont-back {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  color: white;
+  z-index: 9999;
+}
+.teamStepCont--blogpost .teamStepCont-blog__posts > .mdl-card .mdl-card__media {
+  background-image: url('../images/hood.jpg');
+  height: 280px;
+}
+.teamStepCont .meta > .meta__favorites .material-icons {
+  font-size: 2em;
+  margin-left: 12px;
+}
+.fixed{
+    position: fixed ! important;
+}
+.leftCard{
+  margin-right: 100px ! important;
+}
+.teamStepCont .teamStepCont__posts {
   padding-bottom: 100px ! important;
   padding-top: 50px ! important;
   max-width: 900px;
@@ -52,15 +73,13 @@ body .teamStepCont-blog {
       -ms-flex-negative: 0;
           flex-shrink: 0;
 }
-.fixed{
-    position: fixed ! important;
-}
-.teamStepCont-blog.mdl-layout .mdl-layout__content {
+
+.teamStepCont.mdl-layout .mdl-layout__content {
   padding-top: 230px;
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
-.teamStepCont-blog .mdl-card {
+.teamStepCont .mdl-card {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -70,9 +89,9 @@ body .teamStepCont-blog {
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  min-height: 360px;
+  /*min-height: 360px;*/
 }
-.teamStepCont-blog .mdl-card__title {
+.teamStepCont .mdl-card__title {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 16px;
@@ -82,14 +101,8 @@ body .teamStepCont-blog {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-.teamStepCont-blog .sub-title {
-  padding: 16px;
-  top:0;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-.teamStepCont-blog .mdl-card__media {
+
+.teamStepCont .mdl-card__media {
   box-sizing: border-box;
   background-size: cover;
   /*padding: 24px;*/
@@ -105,13 +118,12 @@ body .teamStepCont-blog {
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
-  cursor: pointer;
 }
-.teamStepCont-blog .mdl-card__media a,
-.teamStepCont-blog .mdl-card__title a {
+.teamStepCont .mdl-card__media a,
+.teamStepCont .mdl-card__title a {
   color: inherit;
 }
-.teamStepCont-blog .mdl-card__supporting-text {
+.teamStepCont .mdl-card__supporting-text {
   width: 100%;
   padding: 16px;
   min-height: 64px;
@@ -139,24 +151,21 @@ li{
   margin: 5px;
   font-size: 12pt;
 }
-.teamStepCont-blog .mdl-card__supporting-text strong {
+.teamStepCont .mdl-card__supporting-text strong {
   font-weight: 400;
 }
-.teamStepCont-blog .mdl-card__media ~ .mdl-card__supporting-text {
+.teamStepCont .mdl-card__media ~ .mdl-card__supporting-text {
   min-height: 64px;
 }
-.teamStepCont-blog .mdl-card__supporting-text:not(:last-child) {
+.teamStepCont .mdl-card__supporting-text:not(:last-child) {
   box-sizing: border-box;
   min-height: 76px;
 }
-.teamStepCont-blog:not(.teamStepCont-blog--blogpost) .mdl-card__supporting-text ~ .mdl-card__supporting-text {
+.teamStepCont:not(.teamStepCont--blogpost) .mdl-card__supporting-text ~ .mdl-card__supporting-text {
   border-top: 1px solid rgba(0,0,0,0.1);
 }
 
-.teamStepCont-blog .mdl-card__actions:first-child {
-  margin-left: 0;
-}
-.teamStepCont-blog .meta {
+.teamStepCont .meta {
   box-sizing: border-box;
   padding: 16px;
   display: -webkit-flex;
@@ -173,28 +182,12 @@ li{
           justify-content: flex-start;
   height: auto;
 }
-.teamStepCont-blog .meta > .meta__favorites{
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 0 8px;
-  font-size: 13px;
-  font-weight: 500;
-}
-.teamStepCont-blog .meta > .meta__favorites .material-icons {
-  font-size: 2em;
-  cursor: pointer;
-  margin-left: 12px;
-}
-.teamStepCont-blog .mdl-card .meta.meta--fill {
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.teamStepCont-blog .meta > *:first-child {
+
+.teamStepCont .meta > *:first-child {
   margin-right: 16px;
 }
-.teamStepCont-blog .meta > * {
+
+.teamStepCont .meta > * {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -202,59 +195,30 @@ li{
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.teamStepCont-blog.is-small-screen .teamStepCont-blog__posts > .mdl-card.coffee-pic {
-  -webkit-order: 0;
-      -ms-flex-order: 0;
-          order: 0;
-}
-.teamStepCont-blog.is-small-screen .teamStepCont-blog__posts > .mdl-card.something-else {
-  -webkit-order: -1;
-      -ms-flex-order: -1;
-          order: -1;
-}
-.teamStepCont-blog .coffee-pic .mdl-card__media {
-  background-image: url('../images/coffee.jpg');
-}
-.teamStepCont-blog .something-else .mdl-card__media {
+.teamStepCont-blog .teamStepCont-blog__posts {
+  padding-bottom: 100px ! important;
+  padding-top: 50px ! important;
+  max-width: 900px;
+  padding: 0;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.teamStepCont-blog .something-else > button {
-  position: absolute;
-  top: 0;
-  right: 28px;
-  -webkit-transform: translate(0px, -28px);
-          transform: translate(0px, -28px);
-}
-.teamStepCont-blog .something-else .mdl-card__media {
-  font-size: 13px;
-  font-weight: 500;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-}
-.teamStepCont-blog .something-else .mdl-card__media img {
-  width: 64px;
-  height: 64px;
-  margin-bottom: 10px;
-}
-.android-wear-band {
-  bottom: 0;
   width: 100%;
+  margin: 0 auto;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.middleDivider {
+  bottom: 0;
+  max-width: 100%;
+  position: relative;
   margin: 10px;
+  opacity: 0.8;
   text-align: center;
   background-color:  #f0aa89
 }
-.android-wear-band-text {
+.middleDivider-text {
   max-width: 800px;
   margin-left: 25%;
   padding: 24px;
@@ -272,240 +236,9 @@ li{
       background-color:#89cff0  ! important;
       z-index: 900;
 }
-  .android-wear-band-text p {
+.middleDivider-text p {
     padding-top: 8px;
-  }
-.teamStepCont-blog .something-else .mdl-card__supporting-text {
-  background-color: #F5F5F5;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
 }
-.teamStepCont-blog .teamStepps .mdl-card__media {
-  background-image: url('../images/teamStepps.jpg');
-  position: relative;
-  height: 200px;
-}
-.teamStepCont-blog .on-the-road-again .mdl-card__media {
-  background-image: url('../images/puzzle.jpg');
-  position: relative;
-  height: 200px;
-}
-.teamStepCont-blog .shopping .mdl-card__media {
-  background-image: url('../images/teamProblemSolving.jpg');
-  height: 200px;
-}
-.teamStepCont-blog .teamStepCont-blog__posts > .teamStepCont-nav {
-  margin: 12px 15px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-  font-weight: 500;
-}
-.teamStepCont-blog .teamStepCont-blog__posts > .teamStepCont-nav > .teamStepCont-nav__button {
-  color: white;
-  text-decoration: none;
-}
-.teamStepCont-blog .teamStepCont-blog__posts > .teamStepCont-nav .mdl-button {
-  color: rgba(0,0,0,0.54);
-  background-color: white;
-}
-.teamStepCont-blog .teamStepCont-blog__posts > .teamStepCont-nav > .teamStepCont-nav__button:first-child .mdl-button {
-  margin-right: 16px;
-}
-.teamStepCont-blog .teamStepCont-blog__posts > .teamStepCont-nav > .teamStepCont-nav__button:last-child .mdl-button {
-  margin-left: 16px;
-}
-.title-txt-color{
-  color: #2196F3 ! important;
-}
-
-.align-card{
-  display: inline-block ! important;
-  margin: 50px;
-}
-@media screen and (max-width: 600px) {
-    
-
-}
-.teamStepCont-blog .mdl-card > a {
-  color: inherit;
-  text-decoration: none;
-  font-weight: inherit;
-}
-.teamStepCont-blog .mdl-card h3 {
-  margin: 0;
-}
-.teamStepCont-blog .mdl-card h3 a {
-  text-decoration: none;
-}
-.teamStepCont-blog .mdl-card h3.quote:before, .teamStepCont-blog .mdl-card h3.quote:after {
-  display: block;
-  font-size: 3em;
-  margin-top: 0.5em;
-}
-.teamStepCont-blog .mdl-card h3.quote:before {
-  content: '“';
-}
-.teamStepCont-blog .mdl-card h3.quote:after {
-  content: '”';
-}
-.teamStepCont-blog--blogpost .custom-header {
-  background-color: transparent;
-}
-.teamStepCont-blog--blogpost .teamStepCont-blog__posts > .mdl-card .mdl-card__media {
-  background-image: url('../images/hood.jpg');
-  height: 280px;
-}
-.teamStepCont-blog--blogpost .comments {
-  background-color: #EEE;
-}
-.teamStepCont-blog--blogpost .meta > * {
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-              -ms-grid-row-align: center;
-          align-items: center;
-}
-.teamStepCont-blog--blogpost .meta + .mdl-card__supporting-text {
-  border: 0;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.teamStepCont-blog--blogpost .meta + .mdl-card__supporting-text p {
-  max-width: 512px;
-  margin: 16px auto;
-  font-size: 16px;
-  line-height: 28px;
-}
-
-.teamStepCont-blog--blogpost .comments {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  padding: 32px;
-  box-sizing: border-box;
-}
-.teamStepCont-blog--blogpost .comments > form {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-bottom: 16px;
-}
-.teamStepCont-blog--blogpost .comments > form .mdl-textfield {
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin-right: 16px;
-  color: rgb(97, 97, 97);
-}
-/* Workaround for Firefox.
- * User agent stylesheet kept overwriting the font in FF only.
- */
-.teamStepCont-blog--blogpost .comments > form .mdl-textfield .mdl-textfield__input {
-  font-family: 'Roboto', 'Helvetica', sans-serif;
-}
-.teamStepCont-blog--blogpost .comments > form .mdl-textfield input,
-.teamStepCont-blog--blogpost .comments > form .mdl-textfield textarea {
-  resize: none;
-}
-.teamStepCont-blog--blogpost .comments > form button {
-  margin-top: 20px;
-  background-color: rgba(0, 0, 0, 0.24);
-  color: white;
-}
-.teamStepCont-blog--blogpost .comments .comment {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-.teamStepCont-blog--blogpost .comments .comment > .comment__header {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 16px;
-}
-.teamStepCont-blog--blogpost .comments .comment > .comment__header > .comment__avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
-  margin-right: 16px;
-}
-.teamStepCont-blog--blogpost .comments .comment > .comment__header > .comment__author {
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.teamStepCont-blog--blogpost .comments .comment > .comment__text {
-  line-height: 1.5em;
-}
-.teamStepCont-blog--blogpost .comments .comment > .comment__actions {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 0.8em;
-  margin-top: 16px;
-}
-.teamStepCont-blog--blogpost .comments .comment > .comment__actions button {
-  margin-right: 16px;
-  color: rgba(0, 0, 0, 0.24);
-}
-.teamStepCont-blog--blogpost .comments .comment > .comment__answers {
-  padding-top: 32px;
-  padding-left: 48px;
-}
-
 .teamStepCont-blog--blogpost .teamStepCont-back {
   position: absolute;
   top: 16px;
@@ -513,32 +246,52 @@ li{
   color: white;
   z-index: 9999;
 }
-.teamStepCont-blog .section-spacer {
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.teamStepCont .teamStepps .mdl-card__media {
+  background-image: url('../images/teamStepps.jpg');
+  height: 200px;
+  background-position: top;
 }
-.text-color-pink{
-  color:#FF91A4;
-}
-.teamStepCont-blog .something-else {
-  overflow: visible;
-  z-index: 10;
-}
-.teamStepCont-blog .amazing .mdl-card__media {
-  background-image: url('../images/leadership.jpg');
+.teamStepCont .tuningUp .mdl-card__media {
+  background-image: url('../images/puzzle.jpg');
   position: relative;
   height: 200px;
 }
-.teamStepCont-blog .minilogo {
-  width: 44px;
-  height: 44px;
-  background-image: url('../images/avatar.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 50%;
-  border-radius: 22px;
-  background-color: #F5F5F5;
+
+.teamStepCont .problemSolving .mdl-card__media {
+  background-image: url('../images/teamProblemSolving.jpg');
+  height: 200px;
+}
+
+.align-card{
+  display: inline-block ! important;
+  max-width: 100%;
+  margin: 50px;
+}
+@media screen and (max-width: 600px) {
+    .align-card{
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 0;
+      margin-bottom: 10;
+      
+    }
+}
+
+.teamStepCont .mdl-card h3 {
+  margin: 0;
+}
+
+
+.teamStepCont .leadership .mdl-card__media {
+  background-image: url('../images/leadership.jpg');
+  height: 200px;
+}
+
+.teamStepCont .DC .mdl-card__media {
+  background: url('../images/DC.jpg');
+  position: relative;
+  height: 320px;
+  width: 100%;
 }
 
 /* Fixes for IE 10 */
@@ -546,42 +299,4 @@ li{
   display: -webkit-flex !important;
   display: -ms-flexbox !important;
   display: flex !important;
-}
-
-.social-btn {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  margin: 0 16px;
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-  opacity: 0.46;
-  border-radius: 2px;
-}
-.social-btn__twitter {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png');
-}
-.social-btn__blogger {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png');
-}
-.social-btn__gplus {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_gplus_black_24dp.png');
-}
-.social-btn__share {
-  color: rgba(0, 0, 0, 0.54);
-  background: transparent;
-}
-
-.teamStepCont-blog .mdl-mini-footer {
-  margin-top: 80px;
-  height: 120px;
-  padding: 40px;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-              -ms-grid-row-align: center;
-          align-items: center;
-  background-color: white;
-  box-sizing: border-box;
 }
