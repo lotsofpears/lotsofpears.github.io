@@ -195,7 +195,7 @@ li{
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.demo-blog .demo-blog__posts {
+.teamStepCont-blog .teamStepCont-blog__posts {
   padding-bottom: 100px ! important;
   padding-top: 50px ! important;
   max-width: 900px;
