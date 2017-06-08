@@ -45,7 +45,7 @@ body .teamStepCont {
   color: white;
   z-index: 9999;
 }
-.teamStepCont--blogpost .teamStepCont-blog__posts > .mdl-card .mdl-card__media {
+.teamStepCont-blog--blogpost .teamStepCont-blog__posts > .mdl-card .mdl-card__media {
   background-image: url('../images/hood.jpg');
   height: 280px;
 }
@@ -75,7 +75,7 @@ body .teamStepCont {
 }
 
 .teamStepCont.mdl-layout .mdl-layout__content {
-  padding-top: 20px;
+  padding-top: 230px;
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
