@@ -232,6 +232,7 @@ li{
       position: fixed;
       display: block;
       max-width: 100%;
+      position: relative;
       margin-left: 5px;
       margin-right: 5px;
       font-size: 24pt;
