@@ -231,7 +231,7 @@ li{
 .contact-us {
       position: fixed;
       display: block;
-      max-width: 100%;
+      width: 100%;
       font-size: 24pt;
       background-color:#89cff0  ! important;
       z-index: 900;
