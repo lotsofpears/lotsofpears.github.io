@@ -1,7 +1,7 @@
 /*!
- * Start Bootstrap - Agency v4.0.0-beta (https://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
+ * Start Bootstrap - TeamSolutions v1.0.0 ()
+ * Copyright 2013-2017 
+ * Licensed under MIT (https://github.com/BlackrockDigital/team-solutions/blob/master/LICENSE)
  */
 body {
   overflow-x: hidden;
@@ -159,7 +159,7 @@ body {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/teamWorkHeader.jpg");
+  background-image: url("../images/teamWorkHeader.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -330,6 +330,50 @@ header.masthead {
   display: none;
   opacity: 0; }
 
+section#contact {
+  background-color: #333333;
+  background-repeat: no-repeat;
+  color: white;
+  background-position: center; }
+  section#contact .section-heading {
+    color: white; }
+  section#contact .form-group {
+    margin-bottom: 25px; }
+    section#contact .form-group input,
+    section#contact .form-group textarea {
+      padding: 20px; }
+    section#contact .form-group input.form-control {
+      height: auto; }
+    section#contact .form-group textarea.form-control {
+      height: 236px; }
+  section#contact .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none; }
+  section#contact ::-webkit-input-placeholder {
+    font-weight: 700;
+    color: #eeeeee;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+  section#contact :-moz-placeholder {
+    font-weight: 700;
+    color: #eeeeee;
+    /* Firefox 18- */
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+  section#contact ::-moz-placeholder {
+    font-weight: 700;
+    color: #eeeeee;
+    /* Firefox 19+ */
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+  section#contact :-ms-input-placeholder {
+    font-weight: 700;
+    color: #eeeeee;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+  section#contact .text-danger {
+    color: #e74c3c; }
+
 .timeline {
   position: relative;
   padding: 0;
@@ -477,50 +521,6 @@ header.masthead {
     text-transform: none; }
   .speakers-member p {
     margin-top: 0; }
-
-section#contact {
-  background-color: #333333;
-  background-repeat: no-repeat;
-  color: white;
-  background-position: center; }
-  section#contact .section-heading {
-    color: white; }
-  section#contact .form-group {
-    margin-bottom: 25px; }
-    section#contact .form-group input,
-    section#contact .form-group textarea {
-      padding: 20px; }
-    section#contact .form-group input.form-control {
-      height: auto; }
-    section#contact .form-group textarea.form-control {
-      height: 236px; }
-  section#contact .form-control:focus {
-    border-color: #fed136;
-    box-shadow: none; }
-  section#contact ::-webkit-input-placeholder {
-    font-weight: 700;
-    color: #eeeeee;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-transform: uppercase; }
-  section#contact :-moz-placeholder {
-    font-weight: 700;
-    color: #eeeeee;
-    /* Firefox 18- */
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-transform: uppercase; }
-  section#contact ::-moz-placeholder {
-    font-weight: 700;
-    color: #eeeeee;
-    /* Firefox 19+ */
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-transform: uppercase; }
-  section#contact :-ms-input-placeholder {
-    font-weight: 700;
-    color: #eeeeee;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-transform: uppercase; }
-  section#contact .text-danger {
-    color: #e74c3c; }
 
 footer {
   padding: 25px 0;
