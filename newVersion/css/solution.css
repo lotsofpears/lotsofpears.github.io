@@ -79,6 +79,9 @@ body {
   border-right-width: 5px;
   border-radius: 3px; }
 
+.bs-callout-no-border {
+  border: none; }
+
 .bs-callout h4 {
   margin-top: 0;
   margin-bottom: 5px; }
@@ -103,6 +106,18 @@ body {
 
 .bs-callout-default h4 {
   color: #777777; }
+
+.carousel-indicators li {
+  background-color: #fed136; }
+
+.carousel-indicators .active {
+  background-color: #777777; }
+
+.text-color-theme {
+  color: #fed136; }
+
+.text-95 {
+  font-size: 95%; }
 
 #mainNav {
   background-color: #222222; }
@@ -201,10 +216,6 @@ header.masthead {
       margin-bottom: 50px;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       text-transform: uppercase; } }
-
-.service-heading {
-  margin: 15px 0;
-  text-transform: none; }
 
 #workshops .workshops-item {
   right: 0;

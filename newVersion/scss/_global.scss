@@ -93,6 +93,10 @@ body {
     border-right-width: 5px;
     border-radius: 3px;
 }
+.bs-callout-no-border{
+  border: none;
+}
+
 .bs-callout h4 {
     margin-top: 0;
     margin-bottom: 5px;
@@ -121,4 +125,21 @@ body {
 }
 .bs-callout-default h4 {
     color: $gray-light;
+}
+
+
+//testimonial carousel
+.carousel-indicators{
+  li{
+    background-color: $theme-primary;
+  }
+  .active{
+    background-color: $gray-light;
+  }
+}
+.text-color-theme{
+  color: $theme-primary;
+}
+.text-95{
+  font-size: 95%;
 }
