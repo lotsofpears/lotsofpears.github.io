@@ -1,6 +1,9 @@
 // Styling for the footer
 footer {
-  padding: 25px 0;
+  padding: 15px 0;
+  font-size: 50%;
+  color: white;
+  background-color: $footer-color;
   text-align: center;
   span.copyright {
     font-size: 90%;
