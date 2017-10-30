@@ -1,269 +1,900 @@
-<!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      https://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Team Solutions</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="css/material.min.css" />
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <a href="contact.html" class="contact-us mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--white">Contact Us!</a>
 
-    <div class="teamStepCont mdl-layout mdl-js-layout has-drawer is-upgraded">
-      <main class="mdl-layout__content">
-        <div class="teamStepCont__posts mdl-grid">
-            <div class="mdl-cell mdl-cell--12-col">
-              <div class="mdl-cell mdl-cell--4-col align-card leftCard">
-                <div class="mdl-card mdl-shadow--4dp ">
-                  <div class="mdl-card__media ">
-                    <img src="images/mom.jpg" width="100%" height="300" border="0" alt="" >
-                  </div>
-                  <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">Rhonda Fischer</h2>
-                  </div>
-                  <div class="mdl-card__supporting-text-Changed mdl-color-text--grey-900" style="font-size: 12pt;">
-                    A bachelor’s prepared RN with a board certification in Emergency Nursing, brings her enthusiasm for people and joy-filled living in to her almost 25 year history as a nurse. She has worked both stateside and overseas in Emergency nursing and public health and was honored to receive the March of Dimes “Nurse of the Year” award for Oregon and SW Washington in the Emergency Nursing category for 2014. Rhonda is passionate about teaching others how to celebrate and support the unique contribution of each team member and the rewards of cultivating trust within the team. To that end, she has been a TeamSTEPPS Master Trainer since 2010, presenting at the local, state and national level. Her engaging and energetic speaking style inspires others to never lose sight of what fuels their passion, both personally and professionally. 
-                  </div>
-                </div>
-              </div>
-              <div class="mdl-cell mdl-cell--4-col align-card ">
-                <div class="mdl-card mdl-shadow--4dp ">
-                  <div class="mdl-card__media ">
-                    <img src="images/jan.jpg" width="100%" height="300" border="0" alt="" >
-                  </div>
-                  <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">Jan Brauer </h2>
-                  </div>
-                  <div class="mdl-card__supporting-text-Changed mdl-color-text--grey-900" style="font-size: 12pt;">
-                    BSN, MA believes that we are all unique and have something to contribute to a team. She is energized by working on highly effective teams and helping others tune their teams for greater success. With more than 30 years as a labor and delivery nurse and 5 years as a TeamSTEPPS Master Trainer in Oregon and nationally, Jan has become a leader in patient-centered teamwork to ensure that healthcare teams are working collaboratively to provide quality patient centered care. Audiences love Jan’s sense of humor and engaging, energetic approach to sharing the core elements of developing successful teams, the role of temperament in forming strong teams, and the practical tools necessary for building teams.
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="mdl-card mdl-cell mdl-cell--12-col">
-                <div class="mdl-card__media  mdl-color-text">
-                  <img src="images/microphone.jpg" width="100%" height="250" border="0" alt="" >
-                </div>
-                <div class="mdl-card__title">
-                  <div class="mdl-card__title-text mdl-color-text--grey-800">
-                    <h2>Qualifications</h2>
-                  </div>
-                </div>
-                <div class="mdl-card__title">
-                  <div class="mdl-card__title-text mdl-color-text--grey-800">
-                    <h5>Jan and Rhonda have presented for:</h5>
-                  </div>
-                </div>
-                <div class="mdl-card__supporting-text mdl-color-text--grey-800 meta text-size">
-                  <ul>
-                    <li>TeamSTEPPS National Conference for the last 4 years (2013-2017)</li>
-                    <li>Agency for Healthcare Research and Quality (AHRQ)</li>
-                    <li>Oregon Rural Healthcare Quality Network (ORHQN)</li>
-                    <li>Oregon Patient Safety Commission (OPSC)</li>
-                    <li>Samaritan Health System</li>
-                    <li>Providence Health System</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="middleDivider">
-            <div class="middleDivider-text">
-              <div class="mdl-typography--display-2">What Jan and Rhonda Offer</div>
-              <p class="mdl-typography--headline">
-                &emsp; &emsp; Here is a look at the workshops that are offered.
-              </p>
-            </div>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <title>Jan &amp; Rhonda</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/solution.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Jan &amp; Rhonda</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#workshops">Workshops</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-heading">Creating Team Solutions</div>
+        <a class="btn btn-xl js-scroll-trigger" href="#speakers">Meet The Speakers</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Speakers -->
+  <section class="bg-light" id="speakers">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Speakers</h2>
         </div>
-        <div class="teamStepCont__posts mdl-grid">
-          <div class="mdl-card teamStepps mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-            </div>
-            <div class="mdl-card__title">
-              <div class="mdl-card__title-text mdl-color-text--grey-800">
-                <h2>TeamSTEPPS</h2>
-              </div>
-            </div>
-            <div class="mdl-card__title">
-              <div class="mdl-card__title-text mdl-color-text--grey-800">
-                <h5>TeamSTEPPS is a teamwork system designed for health care professionals that is:</h5>
-              </div>
-            </div>
-
-            <div class="mdl-color-text--grey-800 mdl-card__supporting-text meta">
-              <ul>
-                <li>A powerful solution to improving patient safety within your organization.</li>
-                <li>An evidence-based teamwork system to improve communication and teamwork skills among health care professionals.</li>
-                <li>A source for ready-to-use materials and a training curriculum to successfully integrate teamwork principles into all areas of your health care system.</li>
-                <li>Scientifically rooted in more than 20 years of research and lessons from the application of teamwork principles.</li>
-                <li>Developed by Department of Defense's Patient Safety Program in collaboration with the Agency for Healthcare Research and Quality.</li>
-              </ul>
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-800">
-              <div>
-                <div class="mdl-color-text--grey-800 mdl-card__supporting-text meta text-size">Jan and Rhonda are TeamSTEPPS master trainers with extensive TeamSTEPPS experience - both in training and practical application.  They can provide consultation, a four hour Fundamentals course, or assist your team with delivering a two-day Master Trainer course.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mdl-card tuningUp mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-            </div>
-            <div class="mdl-card__title">
-              <div class="mdl-card__title-text mdl-color-text--grey-800">
-                <h2>Tuning Up Your Team: The Role of Temperament in Team Performance </h2>
-              </div>
-            </div>
-            <div class="mdl-color-text--grey-800 mdl-card__supporting-text meta text-size">
-             Do you ever wonder why some teams seem more efficient and effective than others? High performing teams have discovered the role that temperament plays in team performance. They have learned to deploy in the areas of their strengths and accomadate for each other's weaknesses. How do they do that? They know their team and they value their differences. <br> <br>
-             
-             They're not surprised by the conflict their uniqueness generates but have learned to leverage it to build a stronger team. Utilizing the DISC temperament tool, Jan and Rhonda will help you discover your unique contribution to your team. They will also teach you how to change your leadership speak and conflict management style to most effectively relate to each team member's particular temperament. 
-            </div>
-          </div>
-          <div class="mdl-card leadership mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media  mdl-color-text"></div>
-            <div class="mdl-card__title">
-              <div class="mdl-card__title-text mdl-color-text--grey-800">
-                <h2>Leadership that Goes the Distance: Cultivating a Leadership Culture</h2>
-              </div>
-            </div>
-            <div class="mdl-card__supporting-text mdl-color-text--grey-800 meta text-size">
-              Without strong leadership, even the best teams will falter. Mastering the art of “self-leadership” is critical for both individual success and creating winning teams. However, most people find it easier to direct others rather than do the difficult work of self-reflection that will ultimately propel the whole team towards greatness. <br> <br>
-
-              The two speakers will guide you through a series of “self-leadership” questions that will help ensure you are giving the best possible gift you can give your team– a fully focused, deeply passionate and highly energized you. Those who commit to the rewarding work of self-leadership are then uniquely positioned to excel at one of the leader’s greatest responsibilities: replication. In this session you will learn how to identify and cultivate the leadership potential in others. You will also gain insight into how casting a compelling vision for a “leadership culture” will motivate, activate and ultimately transform your team.
-            </div>
-          </div>
-          <div class="mdl-card problemSolving mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-            </div>
-            <div class="mdl-card__title">
-              <div class="mdl-card__title-text mdl-color-text--grey-800">
-                <h2>The Answer is in the Room: Problem Solving that Will Reinvigorate Your Struggling Team</h2>
-              </div>
-            </div>
-            <div class="mdl-color-text--grey-800 mdl-card__supporting-text meta text-size">
-              All teams go through seasons of stagnation and conflict; members of a team need to understand that this is normal in order for the team not to get derailed. Healthy teams proactively identify and address the barriers they face. "The Answer is in the Room" is an interactive workshop about empowering team members to find collective solutions, maximizing the strengths found within the team. <br>
-
-              Session participants will discover how they can utilize a four-step process (the 4Ds) to address team-based problem solving. They will also discover how TeamSTEPPS tools and concepts are the keys to unlocking the team’s higher goal, propelling their team into a place of strength and effectiveness once again.
-            </div>
-          </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="speakers-member">
+          <img class="mx-auto rounded-circle" src="images/speakers/rhondaAndJan.png" alt="">
         </div>
-          
-        <div class="middleDivider">
-          <div class="middleDivider-text">
-            <div class="mdl-typography--display-2">Reviews</div>
-            <p class="mdl-typography--headline">
-              &emsp; &emsp; See what people are saying about Jan and Rhonda.
+      </div>
+      <div class="row">
+        <!-- Mom -->
+        <div class="col-sm-6">
+          <div class="speakers-member">
+            <h4>Rhonda Fischer</h4>
+            <p class="text-muted">A bachelor’s prepared RN with a board certification in Emergency Nursing, brings her enthusiasm for people and
+              joy-filled living in to her almost 25 year history as a nurse. She has worked both stateside and overseas in
+              Emergency nursing and public health and was honored to receive the March of Dimes “Nurse of the Year” award
+              for Oregon and SW Washington in the Emergency Nursing category for 2014. Rhonda is passionate about teaching
+              others how to celebrate and support the unique contribution of each team member and the rewards of cultivating
+              trust within the team. To that end, she has been a TeamSTEPPS Master Trainer since 2010, presenting at the
+              local, state and national level. Her engaging and energetic speaking style inspires others to never lose sight
+              of what fuels their passion, both personally and professionally.
             </p>
           </div>
         </div>
-        <div class="teamStepCont__posts mdl-grid">
-        
-        <div class="mdl-card mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media  mdl-color-text">
-                  <img src="images/DC.jpg" width="100%" height="" border="0" alt="" >
-            </div>
-            <div class="mdl-card__title">
-              <div class="mdl-card__title-text mdl-color-text--grey-800">
-                <h2>Testimonials for TeamSolution</h2>
-              </div>
-            </div>
-            <div class="mdl-card__supporting-text mdl-color-text--grey-800 meta text-size">
-              <i>
-                "I've had the pleasure of teaching TeamSTEPPS (TS) with Rhonda and Jan at the Oregon state level for 5 years. They are extraordinary clinical nurses who bring innovation and creativeness to TeamSTEPPS tools & strategies that transforms the practical aspect of how to implement and sustain TeamSTEPPS principles.  Their passion to change the healthcare system's design, process and culture resonates with everyone who hears them speak. They are an inspiration to all of us to improve ourselves and ultimately the patient experience by making safety and quality our top priorities."
-              </i>
-            </div>
-            <br>
-            <i>
-              &emsp; &emsp; Stephen M. Hale, MD <br>
-              &emsp; &emsp; Hospitalist Director<br>
-              &emsp; &emsp; Samaritan Pacific Communities Hospital<br>
-              &emsp; &emsp; Newport, OR
-            </i>
-            <br>
+        <!-- Jan -->
+        <div class="col-sm-6">
+          <div class="speakers-member">
+            <h4>Jan Brauer</h4>
+            <p class="text-muted">
+              Jan, BSN, MA, currently is a RN at <i>Hood River Memorial Hospital</i> in obstetrics. She also travels and consults extensively, 
+              assisting teams with patient safety program implementation challenges and leadership development.
+              Jan believes that we are all unique and have something to contribute to a team. She is energized by working on highly
+              effective teams and helping others tune their teams for greater success. With more than 30 years as a labor
+              and delivery nurse and 5 years as a TeamSTEPPS Master Trainer in Oregon and nationally, Jan has become a leader
+              in patient-centered teamwork to ensure that healthcare teams are working collaboratively to provide quality
+              patient centered care. Audiences love Jan’s sense of humor and engaging, energetic approach to sharing the
+              core elements of developing successful teams, the role of temperament in forming strong teams, and the practical
+              tools necessary for building teams.
+            </p>
           </div>
-          <div class="mdl-card mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__supporting-text mdl-color-text--grey-800 meta text-size">
-              <i>
-                "When it comes to dynamic public speaking on patient safety, Rhonda and Jan are stars.  For the past 5 years, they have brought enthusiasm and creativity to our state-wide TeamSTEPPS conferences. Conference participants routinely mark “Excellent” on Jan and Rhonda’s presentations for both content and presentation skills. 
-                <br><br>
-                Jan and Rhonda have complimentary talents in assessing participants learning needs. They are able to translate complex teambuilding concepts into clear, practical strategies. They readily share their learnings as front-line nurses in promoting patient safety; they can “walk the talk” when it comes to patient safety because they have current knowledge and experiences in this arena. Jan and Rhonda are consistently approachable and professional. I have appreciated their promptness in meeting timelines, attention to details and eagerness to gain more knowledge in high performing work teams in healthcare. I would highly recommend them!"
-              </i>
-            </div>
-            <br>
-            <i>
-              &emsp; &emsp; Julia Fontanilla, RN MN <br>
-              &emsp; &emsp; TeamSTEPPS Conference Planner and Board Member<br>
-              &emsp; &emsp; Oregon Rural Healthcare Quality Network
-            </i>
-            <br>
-          </div>
-          <div class="mdl-card mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__title">
-              <div class="mdl-card__title-text mdl-color-text--grey-800">
-                <h3>What people are saying about Jan and Rhonda:</h3>
-              </div>
-            </div>
-            <div class="mdl-card__supporting-text mdl-color-text--grey-800 meta text-size">
-                  <i> 
-                    <p>“Love the speakers what a team; wish I could work with them - they care…” </p>
-                   
-                    <p>&emsp; &emsp; &emsp; &emsp;“Thank you for the personal experience/stories; very hands on material; Jan and Rhonda are easy to relate to...”</p>
-
-                    <p>“Great tandem, love the energy; I want to buy . . . Whatever else you're selling.”</p>
-                    
-                   <p>&emsp; &emsp; &emsp; &emsp;“Amazing team &amp; presentation! The best presentation of this two day conference!”</p>
-                    
-                    <p>"Jan is one of my favorite presenters! Excellent!"</p>
-                    
-                    <p>&emsp; &emsp; &emsp; &emsp; “Rhonda is a dynamic speaker - could have listened to her all day!”</p>
-                    
-                    <p>"Excellent engagement &amp; passion; Jan is a very gifted speaker"</p>
-                    
-                    <p>&emsp; &emsp; &emsp; &emsp; “Rhonda has awesome energy, connection &amp; passion. Amazing!”</p>
-                    
-                    <p>"Jan did a great job-can tell she uses these strategies with ease; I'd like to work on her team!"</p>
-                    
-                   <p>&emsp; &emsp; &emsp; &emsp; “Rhonda is energetic, captivating – wonderful speaker!”</p>
-                   
-                   <p>"Jan has a lot of energy and used personal stories as examples which helped the info stick"</p>
-                    
-                    <p>&emsp; &emsp; &emsp; &emsp;“Rhonda is such a fun speaker to listen to! Loved the personal examples and practical application…”</p>
-
-                  </i>
-                </ul>
-              <br>
-
-          </div>
-
         </div>
-      </main>
+      </div>
     </div>
-    <script src="https://code.getmdl.io/1.2.0/material.min.js"></script>
-  </body>
+  </section>
+
+
+  <!-- Workshops Grid -->
+  <!-- for 3 x 3 make each workshop col-md-4 col-sm6 -->
+  <section id="workshops">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Workshops</h2>
+          <h3 class="section-subheading text-muted">Here is a look at the workshops that are offered.</h3>
+        </div>
+      </div>
+      <div class="row">
+
+        <!-- teamSTEPPS -->
+        <div class="col-md-4 col-sm-6 workshops-item">
+          <a class="workshops-link" data-toggle="modal" href="#teamStepps">
+            <div class="workshops-hover">
+              <div class="workshops-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="images/workshops/teamStepps-thumbnail.jpg" alt="">
+          </a>
+          <div class="workshops-caption">
+            <h4>TeamSTEPPS</h4>
+          </div>
+        </div>
+
+        <!-- Termpermant -->
+        <div class="col-md-4 col-sm-6 workshops-item">
+          <a class="workshops-link" data-toggle="modal" href="#temperament">
+            <div class="workshops-hover">
+              <div class="workshops-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="images/workshops/temperament-thumbnail.jpg" alt="">
+          </a>
+          <div class="workshops-caption">
+            <h4>Temperament and Team Performance</h4>
+          </div>
+        </div>
+
+        <!-- Empowering Tomorrow’s Leader -->
+        <div class="col-md-4 col-sm-6 workshops-item">
+          <a class="workshops-link" data-toggle="modal" href="#empowering">
+            <div class="workshops-hover">
+              <div class="workshops-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="images/workshops/empowering-thumbnail.jpg" alt="">
+          </a>
+          <div class="workshops-caption">
+            <h4>Empowering Tomorrow’s Leader</h4>
+          </div>
+        </div>
+
+        <!-- Second Line Of Workshops -->
+
+        <!-- Leaderhip Distance -->
+        <div class="col-md-4 col-sm-6 workshops-item">
+          <a class="workshops-link" data-toggle="modal" href="#leadershipDistance">
+            <div class="workshops-hover">
+              <div class="workshops-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="images/workshops/leadershipDistance-thumbnail.jpg" alt="">
+          </a>
+          <div class="workshops-caption">
+            <h4>Leadership that Goes the Distance</h4>
+          </div>
+        </div>
+
+         <!-- Teaching to Transform” -->
+        <div class="col-md-4 col-sm-6 workshops-item">
+          <a class="workshops-link" data-toggle="modal" href="#teachingTransform">
+            <div class="workshops-hover">
+              <div class="workshops-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="images/workshops/transformStory-thumbnail.jpg" alt="">
+          </a>
+          <div class="workshops-caption">
+            <h4>Teaching to Transform</h4>
+          </div>
+        </div>
+
+        <!-- Answer in Room -->
+        <div class="col-md-4 col-sm-6 workshops-item">
+          <a class="workshops-link" data-toggle="modal" href="#answerInRoom">
+            <div class="workshops-hover">
+              <div class="workshops-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="images/workshops/answerInRoom-thumbnail.jpg" alt="">
+          </a>
+          <div class="workshops-caption">
+            <h4>The Answer is in the Room</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="bg-light" id="experience">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Where We've Been</h2>
+          <h3 class="section-subheading text-muted">Take a look at our experience.</h3>
+        </div>
+      </div>
+      <!-- Carousel -->
+      <div class="col-sm-12">
+        <div class="card text-center">
+          <div class="card-block">
+            <div id="experienceCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#experienceCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#experienceCarousel" data-slide-to="1"></li>
+                <li data-target="#experienceCarousel" data-slide-to="2"></li>
+                <li data-target="#experienceCarousel" data-slide-to="3"></li>
+                <li data-target="#experienceCarousel" data-slide-to="4"></li>
+                <li data-target="#experienceCarousel" data-slide-to="5"></li>
+                <li data-target="#experienceCarousel" data-slide-to="6"></li>
+                <li data-target="#experienceCarousel" data-slide-to="7"></li>
+                <li data-target="#experienceCarousel" data-slide-to="8"></li>
+                <li data-target="#experienceCarousel" data-slide-to="9"></li>
+                <li data-target="#experienceCarousel" data-slide-to="10"></li>
+                <li data-target="#experienceCarousel" data-slide-to="11"></li>
+                <!-- <li data-target="#experienceCarousel" data-slide-to="12"></li> -->
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <img class="d-block img-fluid" src="images/experience/cleveland.jpg" alt="Cleveland Ohio">
+                  <div class="carousel-caption d-none d-md-block back-shade">
+                    <h2>TeamSTEPPS National Conference</h2>
+                    <h5>Cleveland Ohio</h5>
+                    <p>2017</p>
+                  </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="images/experience/washingtonDC.jpg" alt="">
+                  <div class="carousel-caption d-none d-md-block back-shade">
+                    <h2>TeamSTEPPS National Conference</h2>
+                    <h5>Washington DC</h5>
+                    <p>2016</p>
+                  </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="images/experience/newOrleans.jpg" alt="">
+                  <div class="carousel-caption d-none d-md-block back-shade">
+                    <h2>St. James Parish</h2>
+                    <h5>New Orleans Louisiana</h5>
+                    <p>2016</p>
+                  </div>
+                </div>
+                 
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="images/experience/astoria.jpg " alt="">
+                  <div class="carousel-caption d-none d-md-block back-shade">
+                    <h2>Columbia Memorial</h2>
+                    <h5>Astoria Oregon</h5>
+                    <p>2016</p>
+                  </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="images/experience/portland.jpg" alt="">
+                  <div class="carousel-caption d-none d-md-block back-shade">
+                    <h2>Providence Health System</h2>
+                    <h5>Portland OR, Seaside OR, Hood River OR</h5>
+                    <p>2010-2017</p>
+                  </div>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="images/experience/denver.jpg" alt="">
+                  <div class="carousel-caption d-none d-md-block back-shade">
+                    <h2>TeamSTEPPS National Conference</h2>
+                    <h5>Denver Colorado, 2015</h5>
+                    <p>Agency for Healthcare Research and Quality (AHRQ)</p>
+                  </div>
+                </div>
+                
+
+
+                <!-- Slide 7 -->
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="images/experience/newport.jpg" alt="">
+                  <div class="carousel-caption d-none d-md-block back-shade">
+                    <h2>Samaritan Health </h2>
+                    <h5>Newport Oregon</h5>
+                    <p>2015-2017</p>
+                  </div>
+                </div>
+
+              
+                <!-- Slide 8 -->
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="images/experience/bend.jpg" alt="">
+                  <div class="carousel-caption d-none d-md-block back-shade">
+                    <h2>Oregon Rural Health Quality Network (ORHQN)</h2>
+                    <h5>Bend OR, Newport OR, Lincoln City OR</h5>
+                    <p>2010-2015</p>
+                  </div>
+                </div>
+
+ 
+                <!-- Slide 9 -->
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="images/experience/oregonPaitent.jpg" alt="">
+                  <div class="carousel-caption d-none d-md-block back-shade">
+                    <h2>Oregon Patient Safety Commission</h2>
+                    <h5>Portland Oregon</h5>
+                    <p>2016-2017</p>
+                  </div>
+                </div>
+
+                <!-- Slide 10 -->
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="images/experience/minneapolis.jpg" alt="">
+                  <div class="carousel-caption d-none d-md-block back-shade">
+                    <h2>TeamSTEPPS National Conference</h2>
+                    <h5>Minneapolis Minnesota, 2014</h5>
+                    <p>Agency for Healthcare Research and Quality (AHRQ)</p>
+                  </div>
+                </div>
+
+                <!-- Slide 11 -->
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="images/experience/medford.jpg" alt="">
+                  <div class="carousel-caption d-none d-md-block back-shade">
+                    <h2>Asante Health System</h2>
+                    <h5>Medford Oregon</h5>
+                    <p>2013</p>
+                  </div>
+                </div>
+
+                <!-- Slide 12 -->
+                <!-- <div class="carousel-item">
+                  <div class="carousel-caption d-none d-md-block back-shade">
+                    <div class="be-part-story">
+                      <h2>Be Part
+                      <br>Of Our
+                      <br>Story!</h2>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- End slides -->
+              </div>
+
+              <!-- Carousel buttons -->
+              <a class="carousel-control-prev" href="#experienceCarousel" role="button" data-slide="prev">
+                <span class="fa fa-3x fa-chevron-left text-color-theme" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#experienceCarousel" role="button" data-slide="next">
+                <span class="fa fa-3x fa-chevron-right text-color-theme" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Testimonials</h2>
+          <h3 class="section-subheading text-muted">Things people are saying about Jan and Rhonda</h3>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <!-- Second Quote -->
+        <blockquote class="blockquote text-95">
+          <div class="bs-callout-left bs-callout-default">
+            <p>
+              <i class="fa fa-quote-left" aria-hidden="true"></i>
+              I've had the pleasure of teaching TeamSTEPPS (TS) with Rhonda and Jan at the Oregon state level for 5 years. They are extraordinary
+              clinical nurses who bring innovation and creativeness to TeamSTEPPS tools &amp; strategies that transforms
+              the practical aspect of how to implement and sustain TeamSTEPPS principles. Their passion to change the healthcare
+              system's design, process and culture resonates with everyone who hears them speak. They are an inspiration
+              to all of us to improve ourselves and ultimately the patient experience by making safety and quality our top
+              priorities.
+              <i class="fa fa-quote-right" aria-hidden="true"></i>
+            </p>
+            <div class="text-muted text-left">
+              <small>
+                <br> - Stephen M. Hale, MD
+                <br> Hospitalist Director
+                <br>Samaritan Pacific Communities Hospital
+                <br>Newport, OR
+              </small>
+            </div>
+          </div>
+        </blockquote>
+      </div>
+
+      <br>
+      <!-- Second Quote -->
+      <div class="col-sm-12">
+        <blockquote class="blockquote text-95">
+          <div class="bs-callout-left bs-callout-default">
+            <p>
+              <i class="fa fa-quote-left" aria-hidden="true"></i>
+              When it comes to dynamic public speaking on patient safety, Rhonda and Jan are stars. For the past 5 years, they have brought
+              enthusiasm and creativity to our state-wide TeamSTEPPS conferences. Conference participants routinely mark
+              “Excellent” on Jan and Rhonda’s presentations for both content and presentation skills.
+            </p>
+            <p>
+              Jan and Rhonda have complimentary talents in assessing participants learning needs. They are able to translate complex teambuilding
+              concepts into clear, practical strategies. They readily share their learnings as front-line nurses in promoting
+              patient safety; they can “walk the talk” when it comes to patient safety because they have current knowledge
+              and experiences in this arena. Jan and Rhonda are consistently approachable and professional. I have appreciated
+              their promptness in meeting timelines, attention to details and eagerness to gain more knowledge in high performing
+              work teams in healthcare. I would highly recommend them!
+              <i class="fa fa-quote-right" aria-hidden="true"></i>
+            </p>
+            <div class="text-muted text-left">
+              <small>
+                <br> - Julia Fontanilla, RN MN
+                <br> TeamSTEPPS Conference Planner and Board Member
+                <br>Oregon Rural Healthcare Quality Network
+              </small>
+            </div>
+          </div>
+        </blockquote>
+      </div>
+
+      <br>
+      <!-- Carousel -->
+      <div class="col-sm-12">
+        <div class="card text-center">
+          <div class="card-header">
+            <h5>What Others Are Saying About Jan and Rhonda...</h5>
+          </div>
+          <div class="card-block">
+            <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+                <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+                <li data-target="#testimonialCarousel" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <div class="bs-callout-left bs-callout-no-border">
+                    <span> “Love the speakers what a team; wish I could work with them - they care…”</span>
+                  </div>
+                  <div class="bs-callout-left bs-callout-no-border">
+                    <span>“Thank you for the personal experience/stories; very hands on material; Jan and Rhonda are easy to relate
+                      to...”</span>
+                  </div>
+                  <div class="bs-callout-left bs-callout-no-border">
+                    <span>“Great tandem, love the energy; I want to buy . . . Whatever else you're selling.”</span>
+                  </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <div class="bs-callout-left bs-callout-no-border">
+                    <span>“Amazing team &amp; presentation! The best presentation of this two day conference!”</span>
+                  </div>
+                  <div class="bs-callout-left bs-callout-no-border">
+                    <span>"Jan is one of my favorite presenters! Excellent!"</span>
+                  </div>
+                  <div class="bs-callout-left bs-callout-no-border">
+                    <span>“Rhonda is a dynamic speaker - could have listened to her all day!”</span>
+                  </div>
+                </div>
+
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                  <div class="bs-callout-left bs-callout-no-border">
+                    <span>"Excellent engagement &amp; passion; Jan is a very gifted speaker"</span>
+                  </div>
+                  <div class="bs-callout-left bs-callout-no-border">
+                    <span> “Rhonda has awesome energy, connection &amp; passion. Amazing!”</span>
+                  </div>
+                  <div class="bs-callout-left bs-callout-no-border">
+                    <span>"Jan did a great job-can tell she uses these strategies with ease; I'd like to work on her team!"</span>
+                  </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                  <div class="bs-callout-left bs-callout-no-border">
+                    <span>Rhonda is energetic, captivating – wonderful speaker!”</span>
+                  </div>
+                  <div class="bs-callout-left bs-callout-no-border">
+                    <span>"Jan has a lot of energy and used personal stories as examples which helped the info stick"</span>
+                  </div>
+                  <div class="bs-callout-left bs-callout-no-border">
+                    <span>“Rhonda is such a fun speaker to listen to! Loved the personal examples and practical application…”</span>
+                  </div>
+                </div>
+                <!-- End slides -->
+              </div>
+
+              <!-- Carousel buttons -->
+              <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                <span class="fa fa-3x fa-chevron-left text-color-theme" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                <span class="fa fa-3x fa-chevron-right text-color-theme" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+
+            </div>
+          </div>
+          <!-- <div class="card-footer text-muted"></div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading">Let's Get In Touch!</h2>
+          <hr class="primary">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <!-- Rhonda Contact -->
+        <div class="col-sm-6">
+          <h5 class="ml-auto text-center">Rhonda Fischer</h5>
+          <div class="row">
+            <div class="col-lg-4 ml-auto text-center">
+              <i class="fa fa-phone fa-3x sr-contact"></i>
+              <p>(541)-490-2206</p>
+            </div>
+            <div class="col-lg-4 mr-auto text-center">
+              <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+              <p>
+                <a href="mailto:lotsofpears@hrecn.net">lotsofpears@hrecn.net</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Jan Contact -->
+        <div class="col-sm-6">
+          <h5 class="ml-auto text-center">Jan Brauer</h5>
+          <div class="row">
+            <div class="col-lg-4 ml-auto text-center">
+              <i class="fa fa-phone fa-3x sr-contact"></i>
+              <p>(541)-490-1685</p>
+            </div>
+            <div class="col-lg-4 mr-auto text-center">
+              <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+              <p>
+                <a href="mailto:janbrauer22@gmail.com">janbrauer22@gmail.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- Workshops Modals -->
+  <!-- TeamStepps -->
+  <div class="workshops-modal modal fade" id="teamStepps" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2>TeamStepps</h2>
+                <p class="item-intro text-muted">
+                  An evidence-based teamwork system to 
+                  improve communication and teamwork 
+                  skills among health care professionals
+                </p>
+                <img class="img-fluid d-block mx-auto" src="images/workshops/teamStepps-Full.jpg" alt="">
+                <ul class="list-group">
+                  <li class="list-group-item theme">
+                    <strong> TeamStepps is a teamwork system designed for health care professionals that is...</strong>
+                  </li>
+                  <li class="list-group-item">
+                    A powerful solution to improving patient safety within your organization.
+                  </li>
+                  <li class="list-group-item">
+                    An evidence-based teamwork system to improve communication and teamwork skills among health care professionals.
+                  </li>
+                  <li class="list-group-item">
+                    A source for ready-to-use materials and a training curriculum to successfully integrate teamwork principles into all areas
+                    of your health care system.
+                  </li>
+                  <li class="list-group-item">
+                    Scientifically rooted in more than 20 years of research and lessons from the application of teamwork principles.
+                  </li>
+                  <li class="list-group-item">
+                    Developed by Department of Defense's Patient Safety Program in collaboration with the Agency for Healthcare Research and
+                    Quality
+                  </li>
+                </ul>
+                <br>
+                <hr>
+                <p>Jan and Rhonda are TeamSTEPPS master trainers with extensive TeamSTEPPS experience - both in training and
+                  practical application. They can provide consultation, a four hour Fundamentals course, or assist your team
+                  with delivering a two-day Master Trainer course.
+                </p>
+
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Temperament and Team Performance -->
+  <div class="workshops-modal modal fade" id="temperament" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2>Temperament and Team Performance</h2>
+                <p class="item-intro text-muted">
+                  An interactive workshop revealing how personal 
+                  temperament and communication style impact the 
+                  team dynamic, particularly in the face of conflict
+                </p>
+                <img class="img-fluid d-block mx-auto" src="images/workshops/temperament-full.jpg" alt="">
+                <p>In their most popular workshop, Rhonda and Jan will cover the elements of strong teams, explore the DISC
+                  tool as it relates to your team, and strategize how to deploy each member of your team into their place
+                  of strength for improved performance and patient safety. Participants will discover their personal temperament
+                  and that of their teammates through an interactive exercise. From there, participants will discover how
+                  their personal temperament and communication style is impacting the team dynamic, particularly when it
+                  comes to conflict management and team engagement.
+                </p>
+
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Empowering Tomorrow’s Leader -->
+  <div class="workshops-modal modal fade" id="empowering" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2>Empowering Tomorrow’s Leader</h2>
+                <p class="item-intro text-muted">
+                  Discover how to identify and cultivate 
+                  the leadership potential in others and gain 
+                  insight into how casting a compelling vision 
+                  for a “leadership culture” will motivate, 
+                  activate and ultimately transform your team.
+                </p>
+                <img class="img-fluid d-block mx-auto" src="images/workshops/empowering-full.jpg" alt="">
+                <p>One of the most rewarding aspects of leadership also presents one of the leader’s greatest responsibilities:
+                  replication. Effective leaders know that they multiply their leadership impact exponentially when they
+                  purposely invest in the next generation of leaders. In this session, participants will learn how to identify
+                  and cultivate the leadership potential in others. Jan will discuss the advantage of empowering front line
+                  staff and situational leaders to identify and activate team-based solutions to current barriers. Participants
+                  will also gain insight into how casting a compelling vision for a “leadership culture” will motivate, activate
+                  and ultimately transform their team.
+                </p>
+
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Leadership That Goes The Distance -->
+  <div class="workshops-modal modal fade" id="leadershipDistance" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2>Leadership that Goes the Distance</h2>
+                <p class="item-intro text-muted">
+                  Learn how Self-leadership is a marker 
+                  for not only personal growth but team effectiveness
+                </p>
+                <img class="img-fluid d-block mx-auto" src="images/workshops/leadershipDistance-full.jpg" alt="">
+                <p>Without strong leadership, even the best teams will falter. Mastering the art of “self-leadership” is critical
+                  for both individual success and creating winning teams. However, most people find it easier to direct others
+                  rather than do the difficult work of self-reflection that will ultimately propel the whole team towards
+                  greatness. Rhonda will guide participants through a series of “self-leadership” questions that will help
+                  ensure you are giving the best possible gift you can give your team– a fully focused, deeply passionate
+                  and highly energized you.
+                </p>
+
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Teaching To Transform -->
+  <div class="workshops-modal modal fade" id="teachingTransform" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2>Teaching to Transform: Utilizing Strategic Storytelling to Enhance Patient Safety”</h2>
+                <p class="item-intro text-muted">
+                  Find ways to communicate information 
+                  creatively and meaningfully in the increasingly 
+                  complex environment of healthcare
+                </p>
+                <img class="img-fluid d-block mx-auto" src="images/workshops/transformStory-full.jpg" alt="">
+                <p>In the increasingly complex environment of healthcare, finding ways to communicate 
+                  information creatively and meaningfully is of utmost importance. To truly impact patient 
+                  safety, patients and caregivers alike must understand and embrace information on a personal 
+                  level in ways that are both enlightening and transforming. Information alone is not 
+                  enough to change behavior; we must access the human experience, identify with its 
+                  impact and apply its learnings to both our personal and corporate patient safety journey.  
+                </p>
+                <p>
+                  Storytelling is a foundational element in communicating human experience. 
+                  In this workshop, participants will gain understanding of the critical 
+                  role that stories play in the transference of information. The many benefits 
+                  of storytelling will be explored. Participants will identify the crucial 
+                  components of an effective story as well as articulate storytelling pitfalls. 
+                </p>
+
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Answer is in the Room -->
+  <div class="workshops-modal modal fade" id="answerInRoom" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2>The Answer is in the Room</h2>
+                <p class="item-intro text-muted">
+                  Discover how to empower team members 
+                  to find collective solutions to the 
+                  challenges they face, maximizing the 
+                  strengths found within the team.
+                </p>
+                <img class="img-fluid d-block mx-auto" src="images/workshops/answerInRoom-full.jpg" alt="">
+                <p>All teams go through seasons of stagnation and conflict; members of a team need to understand that this is
+                  normal in order for the team not to get derailed. In the face of unexpected barriers, it is tempting to
+                  shift blame onto personnel.  What is more often true is, the project has lost focus, the leadership style
+                  isn’t effective or the leader has not empowered their team to proactively embrace and solve the challenges
+                  presented. "The Answer is in the Room" is an interactive workshop about empowering team members to find
+                  collective solutions, maximizing the strengths found within the team.
+                </p>
+                <hr>
+                <p>Session participants will discover how they can utilize a four-step process (the 4Ds) to address team-based
+                  problem solving, propelling their team into a place of strength and effectiveness once again.
+                </p>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/solution.min.js"></script>
+
+</body>
+
 </html>
