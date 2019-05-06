@@ -261,6 +261,7 @@ header .overlay {
   opacity: 1; }
 
 .play {
+  cursor: pointer;
   font-size: 85px;
   color: #fed136;
   animation-duration: 1s; }

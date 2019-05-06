@@ -118,6 +118,7 @@ header .overlay {
 }
 
 .play {
+  cursor: pointer;
   font-size: 85px;
   color: $theme-primary;
   animation-duration: 1s;

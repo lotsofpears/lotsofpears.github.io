@@ -34,9 +34,7 @@
       $("#mainNav").removeClass("navbar-shrink");
     }
   });
-
 })(jQuery); // End of use strict
-
 
 var tag = document.createElement('script');
 tag.src = 'https://www.youtube.com/player_api';
