@@ -66,7 +66,15 @@
                     class="collapse navbar-collapse"
                     id="navbarResponsive"
                 >
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto"> 
+                        <li class="nav-item">
+                            <a
+                                class="nav-link js-scroll-trigger"
+                                href="#WhoWeAre"
+                            >
+                                Who We Are
+                            </a>
+                        </li>
                         <li class="nav-item">
                             <a
                                 class="nav-link js-scroll-trigger"
@@ -117,73 +125,62 @@
             <div class="embed-responsive embed-responsive-16by9">
                 <div class="embed-responsive-item">
                     <div
-                        id="page-banner"
-                        class="header-video-section tv"
-                    >
-                        <div
-                            class="overlay"
-                            id="header-overlay"
-                        ></div>
-                        <div class="container h-100">
-                            <div class="d-flex h-100 text-center align-items-center">
-                                <div class="w-100 text-white intro-text">
-                                    <h1 class="display-3 intro-heading">Team Solutions</h1>
-                                    <div class="intro-lead-in">
-                                        Creating Team Solutions By Transforming Team Dynamics And Developing Every Leader
-                                    </div>
-                                    <i
-                                        id="play-btn"
-                                        class="fa fa-play-circle-o animated infinite pulse delay-2s play"
-                                        data-toggle="modal"
-                                        data-target="#vidoeDialog"
-                                        aria-hidden="true"
-                                    ></i>
+                        class="overlay"
+                        id="header-overlay"
+                    ></div>
+                    <div class="container h-100">
+                        <div class="d-flex h-100 text-center align-items-center">
+                            <div class="w-100 text-white intro-text">
+                                <h1 class="display-3 intro-heading">Team Solutions</h1>
+                                <div class="intro-lead-in">
+                                    Creating Team Solutions By Transforming Team Dynamics And Developing Every Leader
                                 </div>
+                                <a
+                                    class="btn btn-primary btn-md text-uppercase js-scroll-trigger"
+                                    href="#WhoWeAre"
+                                >
+                                    Who We Are
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div
-                        id="tv"
-                        class="screen vidflex"
-                    ></div>
                 </div>
             </div>
         </header>
-        <!-- Video Player Modal -->
-        <div
-            class="modal fade"
-            id="vidoeDialog"
-            tabindex="-1"
-            role="dialog"
+
+        <!-- Who We Are Video -->
+        <section
+            id="WhoWeAre"
         >
-            <div
-                class="modal-dialog modal-dialog-centered modal-lg"
-                id="modal"
-            >
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <div class="embed-responsive-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Who We Are</h2>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="card text-center">
+                        <div class="card-block">
+                            <div class="embed-responsive embed-responsive-16by9">
+                              <div class="embed-responsive-item">
                                 <div
-                                    id="videoDialogPlayer"
-                                    class="screen vidflex"
-                                ></div>
+                                      id="videoDialogPlayer"
+                                      class="screen vidflex"
+                                  ></div>
+                              </div>
+                            <iframe
+                                    class="embed-responsive-item"
+                                    src="https://www.youtube.com/embed/D3XeBOJ5LYM?rel=0&showinfo=0&optimizeDisplay=1"
+                                    frameborder="0"
+                                    allow="accelerometer; controls; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen
+                                ></iframe>
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button
-                            class="btn btn-primary"
-                            data-dismiss="modal"
-                            type="button"
-                        >
-                            <i class="fa fa-times"></i>
-                            Close
-                        </button>
-                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Speakers -->
         <section
@@ -196,11 +193,6 @@
                         <h2 class="section-heading">Speakers</h2>
                     </div>
                 </div>
-                <!-- <div class="col-sm-12">
-        <div class="speakers-member">
-          <img class="mx-auto rounded-circle" src="images/speakers/rhondaAndJan.png" alt="">
-        </div>
-      </div> -->
                 <div class="row">
                     <!-- Mom -->
                     <div class="col-sm-6">
