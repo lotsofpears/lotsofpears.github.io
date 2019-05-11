@@ -18,12 +18,12 @@ header.masthead {
       .intro-heading {
         font-size: 60px;
         font-weight: 700;
-        line-height: 40px;
+        line-height: 60px;
         margin-bottom: 8px;
         @include heading-font;
       }
       .intro-lead-in {
-        font-size: 14px;
+        font-size: 18px;
         font-style: italic;
         line-height: 25px;
         margin-bottom: 24px;
@@ -37,11 +37,11 @@ header.masthead {
     .intro-text {
       .intro-heading {
         font-size: 90px;
-        line-height: 70px;
+        line-height: 90px;
         margin-bottom: 8px;
       }
       .intro-lead-in {
-        font-size: 18px; 
+        font-size: 24px; 
       }
     }
   }
@@ -50,7 +50,8 @@ header.masthead {
     header.masthead {
       .intro-text {
         .intro-heading {
-          font-size: 40px;
+          font-size: 50px;
+          line-height: 50px;
           margin-bottom: 8px;
         }
         .intro-lead-in {

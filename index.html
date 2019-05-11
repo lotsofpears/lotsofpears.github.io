@@ -17,7 +17,7 @@
             content
         >
 
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <!-- <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"> -->
         <title>Team Solutions</title>
 
         <!-- Bootstrap core CSS -->
@@ -34,6 +34,20 @@
         <!-- Custom styles for this template -->
         <link href="css/solution.min.css" rel="stylesheet">
 
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta
+            name="msapplication-TileColor"
+            content="#da532c"
+        >
+        <meta
+            name="theme-color"
+            content="#ffffff"
+        >
     </head>
 
     <body id="page-top">
@@ -66,13 +80,13 @@
                     class="collapse navbar-collapse"
                     id="navbarResponsive"
                 >
-                    <ul class="navbar-nav ml-auto"> 
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a
                                 class="nav-link js-scroll-trigger"
                                 href="#WhoWeAre"
                             >
-                                Who We Are
+                                About
                             </a>
                         </li>
                         <li class="nav-item">
@@ -149,9 +163,7 @@
         </header>
 
         <!-- Who We Are Video -->
-        <section
-            id="WhoWeAre"
-        >
+        <section id="WhoWeAre">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
@@ -162,13 +174,13 @@
                     <div class="card text-center">
                         <div class="card-block">
                             <div class="embed-responsive embed-responsive-16by9">
-                              <div class="embed-responsive-item">
-                                <div
-                                      id="videoDialogPlayer"
-                                      class="screen vidflex"
-                                  ></div>
-                              </div>
-                            <iframe
+                                <div class="embed-responsive-item">
+                                    <div
+                                        id="videoDialogPlayer"
+                                        class="screen vidflex"
+                                    ></div>
+                                </div>
+                                <iframe
                                     class="embed-responsive-item"
                                     src="https://www.youtube.com/embed/D3XeBOJ5LYM?rel=0&showinfo=0&optimizeDisplay=1"
                                     frameborder="0"
@@ -236,37 +248,14 @@
                     <div class="col-lg-12 text-center">
                         <h2 class="section-heading">Workshops</h2>
                         <h3 class="section-subheading text-muted">
-                            Here is a look at the workshops that are offered.
+                            Here is a look at the workshops that are offered
                         </h3>
                     </div>
                 </div>
                 <div class="row">
 
-                    <!-- teamSTEPPS -->
-                    <div class="col-md-4 col-sm-6 workshops-item">
-                        <a
-                            class="workshops-link"
-                            data-toggle="modal"
-                            href="#teamStepps"
-                        >
-                            <div class="workshops-hover">
-                                <div class="workshops-hover-content">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img
-                                class="img-fluid"
-                                src="images/workshops/teamStepps-thumbnail.jpg"
-                                alt
-                            >
-                        </a>
-                        <div class="workshops-caption">
-                            <h4>TeamSTEPPS</h4>
-                        </div>
-                    </div>
-
                     <!-- Termpermant -->
-                    <div class="col-md-4 col-sm-6 workshops-item">
+                    <div class="col-md-3 col-sm-5 workshops-item animated wow zoomIn">
                         <a
                             class="workshops-link"
                             data-toggle="modal"
@@ -278,8 +267,8 @@
                                 </div>
                             </div>
                             <img
-                                class="img-fluid"
-                                src="images/workshops/temperament-thumbnail.jpg"
+                                class="img-fluid card-img-top"
+                                src="images/workshops/thumbnail/temperament-thumbnail.jpg"
                                 alt
                             >
                         </a>
@@ -288,12 +277,12 @@
                         </div>
                     </div>
 
-                    <!-- Empowering Tomorrow’s Leader -->
-                    <div class="col-md-4 col-sm-6 workshops-item">
+                    <!-- Driving Change—The Power of Activating and Engaging the Frontline Voice -->
+                    <div class="col-md-3 col-sm-5 workshops-item animated wow zoomIn">
                         <a
                             class="workshops-link"
                             data-toggle="modal"
-                            href="#empowering"
+                            href="#drivingChange"
                         >
                             <div class="workshops-hover">
                                 <div class="workshops-hover-content">
@@ -301,24 +290,24 @@
                                 </div>
                             </div>
                             <img
-                                class="img-fluid"
-                                src="images/workshops/empowering-thumbnail.jpg"
+                                class="img-fluid card-img-top"
+                                src="images/workshops/thumbnail/driving-change-thumbnail.jpg"
                                 alt
                             >
                         </a>
                         <div class="workshops-caption">
-                            <h4>Empowering Tomorrow’s Leader</h4>
+                            <h4>
+                                Activating and Engaging the Frontline Voice
+                            </h4>
                         </div>
                     </div>
 
-                    <!-- Second Line Of Workshops -->
-
-                    <!-- Leaderhip Distance -->
-                    <div class="col-md-4 col-sm-6 workshops-item">
+                    <!-- Employing Strategies for Lasting Cultural Change -->
+                    <div class="col-md-3 col-sm-5 workshops-item animated wow zoomIn">
                         <a
                             class="workshops-link"
                             data-toggle="modal"
-                            href="#leadershipDistance"
+                            href="#lastingCulture"
                         >
                             <div class="workshops-hover">
                                 <div class="workshops-hover-content">
@@ -326,22 +315,24 @@
                                 </div>
                             </div>
                             <img
-                                class="img-fluid"
-                                src="images/workshops/leadershipDistance-thumbnail.jpg"
+                                class="img-fluid card-img-top"
+                                src="images/workshops/thumbnail/lasting-culture-thumbnail.jpg"
                                 alt
                             >
                         </a>
                         <div class="workshops-caption">
-                            <h4>Leadership that Goes the Distance</h4>
+                            <h4>
+                                Employing Strategies for Lasting Cultural Change
+                            </h4>
                         </div>
                     </div>
 
-                    <!-- Teaching to Transform” -->
-                    <div class="col-md-4 col-sm-6 workshops-item">
+                    <!-- The Power of a Healthy Team Dynamic: Essentials for High Performing Teams -->
+                    <div class="col-md-3 col-sm-5 workshops-item animated wow zoomIn">
                         <a
                             class="workshops-link"
                             data-toggle="modal"
-                            href="#teachingTransform"
+                            href="#healthyTeamDynamic"
                         >
                             <div class="workshops-hover">
                                 <div class="workshops-hover-content">
@@ -349,18 +340,48 @@
                                 </div>
                             </div>
                             <img
-                                class="img-fluid"
-                                src="images/workshops/transformStory-thumbnail.jpg"
+                                class="img-fluid card-img-top"
+                                src="images/workshops/thumbnail/healthy-team-thumbnail.jpg"
                                 alt
                             >
                         </a>
                         <div class="workshops-caption">
-                            <h4>Teaching to Transform</h4>
+                            <h4>Essentials for High Performing Teams</h4>
+                        </div>
+                    </div>
+
+                    <!-- STEPPing Through Conflict: Strategies for the Threatened Team Dynamic -->
+                    <div
+                        class="col-md-3 col-sm-5 workshops-item animated wow zoomIn"
+                        data-wow-delay=".5s"
+                    >
+                        <a
+                            class="workshops-link"
+                            data-toggle="modal"
+                            href="#steppingThroughConflict"
+                            style="max-width: 400px; max-height: 300px;"
+                        >
+                            <div class="workshops-hover">
+                                <div class="workshops-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img
+                                class="img-fluid card-img-top"
+                                src="images/workshops/thumbnail/stepping-thumbnail.jpg"
+                                alt
+                            >
+                        </a>
+                        <div class="workshops-caption">
+                            <h4>STEPPing Through Conflict</h4>
                         </div>
                     </div>
 
                     <!-- Answer in Room -->
-                    <div class="col-md-4 col-sm-6 workshops-item">
+                    <div
+                        class="col-md-3 col-sm-5 workshops-item animated wow zoomIn"
+                        data-wow-delay=".5s"
+                    >
                         <a
                             class="workshops-link"
                             data-toggle="modal"
@@ -372,13 +393,171 @@
                                 </div>
                             </div>
                             <img
-                                class="img-fluid"
-                                src="images/workshops/answerInRoom-thumbnail.jpg"
+                                class="img-fluid card-img-top"
+                                src="images/workshops/thumbnail/answerInRoom-thumbnail.jpg"
                                 alt
                             >
                         </a>
                         <div class="workshops-caption">
                             <h4>The Answer is in the Room</h4>
+                        </div>
+                    </div>
+
+                    <!-- The Rising Threat to Patient Safety -->
+                    <div
+                        class="col-md-3 col-sm-5 workshops-item animated wow zoomIn"
+                        data-wow-delay=".5s"
+                    >
+                        <a
+                            class="workshops-link"
+                            data-toggle="modal"
+                            href="#patientSafety"
+                        >
+                            <div class="workshops-hover">
+                                <div class="workshops-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img
+                                class="img-fluid card-img-top"
+                                src="images/workshops/thumbnail/patient-safety-thumbnail.jpg"
+                                alt
+                            >
+                        </a>
+                        <div class="workshops-caption">
+                            <h4>The Rising Threat to Patient Safety</h4>
+                        </div>
+                    </div>
+
+                    <!-- Empowering Tomorrow’s Leader -->
+                    <div
+                        class="col-md-3 col-sm-5 workshops-item animated wow zoomIn"
+                        data-wow-delay=".5s"
+                    >
+                        <a
+                            class="workshops-link"
+                            data-toggle="modal"
+                            href="#tomorrowsLeader"
+                        >
+                            <div class="workshops-hover">
+                                <div class="workshops-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img
+                                class="img-fluid card-img-top"
+                                src="images/workshops/thumbnail/empowering-thumbnail.jpg"
+                                alt
+                            >
+                        </a>
+                        <div class="workshops-caption">
+                            <h4>Empowering Tomorrow’s Leader</h4>
+                        </div>
+                    </div>
+
+                    <!-- Leaderhip Distance -->
+                    <div
+                        class="col-md-3 col-sm-5 workshops-item animated wow zoomIn"
+                        data-wow-delay=".5s"
+                    >
+                        <a
+                            class="workshops-link"
+                            data-toggle="modal"
+                            href="#leadershipDistance"
+                        >
+                            <div class="workshops-hover">
+                                <div class="workshops-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img
+                                class="img-fluid card-img-top"
+                                src="images/workshops/thumbnail/leadershipDistance-thumbnail.jpg"
+                                alt
+                            >
+                        </a>
+                        <div class="workshops-caption">
+                            <h4>Leadership that Goes the Distance</h4>
+                        </div>
+                    </div>
+
+                    <!-- Teaching to Transform” -->
+                    <div
+                        class="col-md-3 col-sm-5 workshops-item animated wow zoomIn"
+                        data-wow-delay=".5s"
+                    >
+                        <a
+                            class="workshops-link"
+                            data-toggle="modal"
+                            href="#teachingTransform"
+                        >
+                            <div class="workshops-hover">
+                                <div class="workshops-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img
+                                class="img-fluid card-img-top"
+                                src="images/workshops/thumbnail/transformStory-thumbnail.jpg"
+                                alt
+                            >
+                        </a>
+                        <div class="workshops-caption">
+                            <h4>Teaching to Transform</h4>
+                        </div>
+                    </div>
+
+                    <!-- A Reflection on Imperfection: Leadership Potential Unleashed -->
+                    <div
+                        class="col-md-3 col-sm-5 workshops-item animated wow zoomIn"
+                        data-wow-delay=".5s"
+                    >
+                        <a
+                            class="workshops-link"
+                            data-toggle="modal"
+                            href="#reflectionOnImperfection"
+                        >
+                            <div class="workshops-hover">
+                                <div class="workshops-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img
+                                class="img-fluid card-img-top"
+                                src="images/workshops/thumbnail/reflection-on-imperfection-thumbnail.jpg"
+                                alt
+                            >
+                        </a>
+                        <div class="workshops-caption">
+                            <h4>A Reflection on Imperfection</h4>
+                        </div>
+                    </div>
+                    <!-- teamSTEPPS -->
+                    <div
+                        class="col-md-3 col-sm-5 workshops-item animated wow zoomIn"
+                        data-wow-delay=".5s"
+                    >
+                        <a
+                            class="workshops-link"
+                            data-toggle="modal"
+                            href="#teamStepps"
+                        >
+                            <div class="workshops-hover">
+                                <div class="workshops-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img
+                                class="img-fluid card-img-top"
+                                src="images/workshops/thumbnail/teamStepps-thumbnail.jpg"
+                                alt
+                            >
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <!-- <div class="workshops-caption"> -->
+                                TeamSTEPPS
+                            </h5>
                         </div>
                     </div>
 
@@ -395,7 +574,7 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2 class="section-heading">Where We've Been</h2>
-                        <h3 class="section-subheading text-muted">Take a look at our experience.</h3>
+                        <h3 class="section-subheading text-muted">Take a look at places we've spoke</h3>
                     </div>
                 </div>
                 <!-- Carousel -->
@@ -1025,13 +1204,11 @@
                                 <div class="modal-body">
                                     <h2>TeamStepps</h2>
                                     <p class="item-intro text-muted">
-                                        An evidence-based teamwork system to
-                  improve communication and teamwork
-                  skills among health care professionals
+                                        An evidence-based teamwork system to improve communication and teamwork skills among health care professionals
                                     </p>
                                     <img
                                         class="img-fluid d-block mx-auto"
-                                        src="images/workshops/teamStepps-Full.jpg"
+                                        src="images/workshops/full/teamStepps-Full.jpg"
                                         alt
                                     >
                                     <ul class="list-group">
@@ -1072,7 +1249,7 @@
                                         type="button"
                                     >
                                         <i class="fa fa-times"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -1112,7 +1289,7 @@
                                     </p>
                                     <img
                                         class="img-fluid d-block mx-auto"
-                                        src="images/workshops/temperament-full.jpg"
+                                        src="images/workshops/full/temperament-full.jpg"
                                         alt
                                     >
                                     <p>
@@ -1130,68 +1307,7 @@
                                         type="button"
                                     >
                                         <i class="fa fa-times"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Empowering Tomorrow’s Leader -->
-        <div
-            class="workshops-modal modal fade"
-            id="empowering"
-            tabindex="-1"
-            role="dialog"
-            aria-hidden="true"
-        >
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div
-                        class="close-modal"
-                        data-dismiss="modal"
-                    >
-                        <div class="lr">
-                            <div class="rl"></div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <div class="modal-body">
-                                    <h2>Empowering Tomorrow’s Leader</h2>
-                                    <p class="item-intro text-muted">
-                                        Discover how to identify and cultivate
-                  the leadership potential in others and gain
-                  insight into how casting a compelling vision
-                  for a “leadership culture” will motivate,
-                  activate and ultimately transform your team.
-                                    </p>
-                                    <img
-                                        class="img-fluid d-block mx-auto"
-                                        src="images/workshops/empowering-full.jpg"
-                                        alt
-                                    >
-                                    <p>
-                                        One of the most rewarding aspects of leadership also presents one of the leader’s greatest responsibilities:
-                  replication. Effective leaders know that they multiply their leadership impact exponentially when they
-                  purposely invest in the next generation of leaders. In this session, participants will learn how to identify
-                  and cultivate the leadership potential in others. Jan will discuss the advantage of empowering front line
-                  staff and situational leaders to identify and activate team-based solutions to current barriers. Participants
-                  will also gain insight into how casting a compelling vision for a “leadership culture” will motivate, activate
-                  and ultimately transform their team.
-                                    </p>
-
-                                    <button
-                                        class="btn btn-primary"
-                                        data-dismiss="modal"
-                                        type="button"
-                                    >
-                                        <i class="fa fa-times"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -1230,7 +1346,7 @@
                                     </p>
                                     <img
                                         class="img-fluid d-block mx-auto"
-                                        src="images/workshops/leadershipDistance-full.jpg"
+                                        src="images/workshops/full/leadershipDistance-full.jpg"
                                         alt
                                     >
                                     <p>
@@ -1248,7 +1364,7 @@
                                         type="button"
                                     >
                                         <i class="fa fa-times"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -1290,7 +1406,7 @@
                                     </p>
                                     <img
                                         class="img-fluid d-block mx-auto"
-                                        src="images/workshops/transformStory-full.jpg"
+                                        src="images/workshops/full/transformStory-full.jpg"
                                         alt
                                     >
                                     <p>
@@ -1315,7 +1431,7 @@
                                         type="button"
                                     >
                                         <i class="fa fa-times"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -1356,7 +1472,7 @@
                                     </p>
                                     <img
                                         class="img-fluid d-block mx-auto"
-                                        src="images/workshops/answerInRoom-full.jpg"
+                                        src="images/workshops/full/answerInRoom-full.jpg"
                                         alt
                                     >
                                     <p>
@@ -1378,7 +1494,446 @@
                                         type="button"
                                     >
                                         <i class="fa fa-times"></i>
-                                        Close Project
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Temperament and Team Performance -->
+        <div
+            class="workshops-modal modal fade"
+            id="temperament"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div
+                        class="close-modal"
+                        data-dismiss="modal"
+                    >
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2>Temperament and Team Performance</h2>
+                                    <p class="item-intro text-muted">
+                                        An interactive workshop revealing how personal
+                  temperament and communication style impact the
+                  team dynamic, particularly in the face of conflict
+                                    </p>
+                                    <img
+                                        class="img-fluid d-block mx-auto"
+                                        src="images/workshops/full/temperament-full.jpg"
+                                        alt
+                                    >
+                                    <p>
+                                        In their most popular workshop, Rhonda and Jan will cover the elements of strong teams, explore the DISC
+                  tool as it relates to your team, and strategize how to deploy each member of your team into their place
+                  of strength for improved performance and patient safety. Participants will discover their personal temperament
+                  and that of their teammates through an interactive exercise. From there, participants will discover how
+                  their personal temperament and communication style is impacting the team dynamic, particularly when it
+                  comes to conflict management and team engagement.
+                                    </p>
+
+                                    <button
+                                        class="btn btn-primary"
+                                        data-dismiss="modal"
+                                        type="button"
+                                    >
+                                        <i class="fa fa-times"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Power of a Healthy Team Dynamic: Essentials for High Performing Teams -->
+        <div
+            class="workshops-modal modal fade"
+            id="healthyTeamDynamic"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div
+                        class="close-modal"
+                        data-dismiss="modal"
+                    >
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2>
+                                        The Power of a Healthy Team Dynamic: Essentials for High Performing Teams
+                                    </h2>
+                                    <p class="item-intro text-muted">
+                                        Explore the deeper meaning of team and examine the role of the team dynamic and its impact on patients, caregivers and organizations.
+                                    </p>
+                                    <img
+                                        class="img-fluid d-block mx-auto"
+                                        src="images/workshops/full/healthy-team-full.jpg"
+                                        alt
+                                    >
+                                    <p>
+                                        When it comes to navigating the road to “zero harm” in healthcare, the team dynamic is an indisputable factor affecting patient safety. In fact, more than 70% of medical errors are attributable to dysfunctional team dynamics. As important as clinical knowledge and technical skills are, the team members’ ability to collaborate, employ emotional intelligence with teammates, and be empowered to contribute to a common goal are equally essential.
+                                    </p>
+                                    <p>
+                                        In this interactive workshop, we will explore the deeper meaning of team and examine the role of the team dynamic and its impact on patients, caregiver and organizations. Essential characteristics of high performing teams will be examined in detail, culminating with an emphasis on the power of team synergy and collective purpose in driving staff satisfaction and patient safety.
+                                    </p>
+                                    <button
+                                        class="btn btn-primary"
+                                        data-dismiss="modal"
+                                        type="button"
+                                    >
+                                        <i class="fa fa-times"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STEPPing Through Conflict: Strategies for the Threatened Team Dynamic -->
+        <div
+            class="workshops-modal modal fade"
+            id="steppingThroughConflict"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div
+                        class="close-modal"
+                        data-dismiss="modal"
+                    >
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2>
+                                        STEPPing Through Conflict: Strategies for the Threatened Team Dynamic
+                                    </h2>
+                                    <p class="item-intro text-muted">
+                                        In this hands-on workshop, participants will examine causes of team breakdown and discover practical strategies to utilize when conflict threatens the team dynamic.
+                                    </p>
+                                    <img
+                                        class="img-fluid d-block mx-auto"
+                                        src="images/workshops/full/stepping-full.jpg"
+                                        alt
+                                    >
+                                    <p>
+                                        Recognizing that contention is to be expected and healthy conflict can potentially drive the team to greater performance is an important first step to leveraging team tension. Members of a team must recognize that stakes are high when conflict is left unaddressed, ultimately effecting the safe and effective care of patients and their families.
+                                    </p>
+                                    <p>
+                                        Participants will examine the causes of team breakdown and achieve a deeper understanding of typical conflict responses. Barriers to successful conflict resolution will be discussed as well as strategies to mitigate such barriers. Finally, participants will examine effective TeamSTEPPS solutions for conflict resolution and have the opportunity to practice those solutions.
+                                    </p>
+                                    <button
+                                        class="btn btn-primary"
+                                        data-dismiss="modal"
+                                        type="button"
+                                    >
+                                        <i class="fa fa-times"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Employing Strategies for Lasting Cultural Change -->
+        <div
+            class="workshops-modal modal fade"
+            id="lastingCulture"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div
+                        class="close-modal"
+                        data-dismiss="modal"
+                    >
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2>
+                                        Employing Strategies for Lasting Cultural Change
+                                    </h2>
+                                    <p class="item-intro text-muted">
+                                        Discover how fostering resilience and cultivating staff engagement can address burnout and secure lasting change in your organization.
+                                    </p>
+                                    <img
+                                        class="img-fluid d-block mx-auto"
+                                        src="images/workshops/full/lasting-culture-full.jpg"
+                                        alt
+                                    >
+                                    <p>
+                                        National statistics show that over half of professional caregivers are experiencing burnout. As a result, much of the needed change initiatives stall or even decline. Fostering resilience and cultivating staff engagement are key strategies for addressing burnout and securing lasting change.
+                                    </p>
+                                    <p>
+                                        This workshop will present tools and concepts to proactively address burnout and activate team members to be the solution to the barriers they face. Intentional partnership and shared leadership between front line staff and designated leaders will create the buy-in required for ongoing success. Participants will discover that it is involving every voice on the team, making time for resilience, and being a mentor that shows the way to the goal are the strategies for lasting change.
+                                    </p>
+                                    <button
+                                        class="btn btn-primary"
+                                        data-dismiss="modal"
+                                        type="button"
+                                    >
+                                        <i class="fa fa-times"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Empowering Tomorrow’s Leader -->
+        <div
+            class="workshops-modal modal fade"
+            id="tomorrowsLeader"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div
+                        class="close-modal"
+                        data-dismiss="modal"
+                    >
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2>Empowering Tomorrow’s Leader</h2>
+                                    <p class="item-intro text-muted">
+                                        Discover how a commitment of time and mentoring into the leaders of tomorrow empowers the team to achieve cultural change.
+                                    </p>
+                                    <img
+                                        class="img-fluid d-block mx-auto"
+                                        src="images/workshops/full/empowering-full.jpg"
+                                        alt
+                                    >
+                                    <p>
+                                        Lasting cultural change requires intentional investment into the individuals of the team. Intentional inviting, investing and empowering individuals to engage and eventually lead the culture change is one strategy to achieve goals that can even outlast the current leader.
+                                    </p>
+                                    <p>
+                                        Change does not occur simply by planning the “how”, it must include the “who”. This requires a commitment of time and mentoring into the leaders of tomorrow, with a goal of becoming a team that is committed to empowering others to take the change to the next level. This session will focus on ways of inviting and investing into individuals so that they will be equipped to lead the way of lasting change in patient safety.
+                                    </p>
+                                    <button
+                                        class="btn btn-primary"
+                                        data-dismiss="modal"
+                                        type="button"
+                                    >
+                                        <i class="fa fa-times"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Rising Threat to Patient Safety -->
+        <div
+            class="workshops-modal modal fade"
+            id="patientSafety"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div
+                        class="close-modal"
+                        data-dismiss="modal"
+                    >
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2>The Rising Threat to Patient Safety</h2>
+                                    <p class="item-intro text-muted">
+                                        Learn about the cost of workplace incivility and how to move your workforce from a position of powerlessness to one of positivity and empowerment.
+                                    </p>
+                                    <img
+                                        class="img-fluid d-block mx-auto"
+                                        src="images/workshops/full/patient-safety-full.jpg"
+                                        alt
+                                    >
+                                    <p>
+                                        Patient safety, teamwork and communication are all threatened when we allow a hidden culture of harassment.  Avoidance and isolation are dysfunctional solutions to what the CDC is now labeling the "Incivility Epidemic". Instead, we must identify the sources, reckon with the sequelae and create strategies for change.
+                                    </p>
+                                    <p>
+                                        Participants in this interactive workshop will leave with an increased awareness of the personal and professional cost of incivility.  They will have the ability to identify many of the contributing factors that feed a culture of incivility and how to combat them.  Using a toolkit for incivility survival, participants will gain the skills necessary for both self and social advocacy.  The workshop concludes by discussing practical, unique ways to foster resilience when confronted with lateral violence, empowering your workforce to move from a position of powerlessness to one of positivity and empowerment.
+                                    </p>
+                                    <button
+                                        class="btn btn-primary"
+                                        data-dismiss="modal"
+                                        type="button"
+                                    >
+                                        <i class="fa fa-times"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Driving Change—The Power of Activating and Engaging the Frontline Voice -->
+        <div
+            class="workshops-modal modal fade"
+            id="drivingChange"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div
+                        class="close-modal"
+                        data-dismiss="modal"
+                    >
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2>
+                                        Driving Change—The Power of Activating and Engaging the Frontline Voice
+                                    </h2>
+                                    <p class="item-intro text-muted">
+                                        Discover how frontline engagement can lead to innovative and lasting change and explore how influence can be leveraged to affect change from anywhere in the organization.
+                                    </p>
+                                    <img
+                                        class="img-fluid d-block mx-auto"
+                                        src="images/workshops/full/driving-change-full.jpg"
+                                        alt
+                                    >
+                                    <p>
+                                        In this workshop, you will be encouraged to reevaluate where the real power for change lies in your organization - it is in the Front Line.  The front line has firsthand information and experience that can lead to innovative and lasting change.  Through interactive exercises and discussion, we will look at the makeup of the current workforce, the importance of coaching instead of managing, and the correlation between staff engagement and workforce retention.
+                                    </p>
+                                    <p>
+                                        We will also examine how to lead when you are not in charge, learning how to leverage influence to affect change from anywhere in the organization.  This requires intentionally building trust with senior leadership and great teambuilding skills to bring all voices to the table to achieve lasting change.  Participants will learn the essential role of asking each member of the team to be partners in solutions, the importance of feedback and the role of gratitude in creating a multi-generational workforce that can go the distance.
+                                    </p>
+                                    <button
+                                        class="btn btn-primary"
+                                        data-dismiss="modal"
+                                        type="button"
+                                    >
+                                        <i class="fa fa-times"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- A Reflection on Imperfection: Leadership Potential Unleashed -->
+        <div
+            class="workshops-modal modal fade"
+            id="reflectionOnImperfection"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div
+                        class="close-modal"
+                        data-dismiss="modal"
+                    >
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2>
+                                        A Reflection on Imperfection: Leadership Potential Unleashed
+                                    </h2>
+                                    <p class="item-intro text-muted">
+                                        Explore how to leverage perceived weaknesses for greater growth and effectiveness and how to keep conflict from shortchanging leadership potential.
+                                    </p>
+                                    <img
+                                        class="img-fluid d-block mx-auto"
+                                        src="images/workshops/full/reflection-on-imperfection-full.jpg"
+                                        alt
+                                    >
+                                    <p>
+                                        In the changing landscape of healthcare, leaders are under pressure and under fire perhaps more than ever. Leaders need to know that perfection is not an attainable goal and can actually undermine their effectiveness. In this session, participants will examine how their past experiences may be shaping their present perspectives and decision making. They will explore various ways to leverage their imperfection, inducing growth and greater effectiveness as a leader.
+                                    </p>
+                                    <p>
+                                        Unacknowledged or undealt with conflict can impair the leader’s confidence and willingness to take healthy risks personally and professionally. Participants will walk away with a four-step tool that can be employed to diffuse the power of offense and keep interpersonal conflict from shortchanging leadership potential.
+                                    </p>
+                                    <button
+                                        class="btn btn-primary"
+                                        data-dismiss="modal"
+                                        type="button"
+                                    >
+                                        <i class="fa fa-times"></i>
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -1402,6 +1957,10 @@
 
         <!-- Custom scripts for this template -->
         <script src="js/solution.min.js"></script>
+
+        <!-- wow.js used to animate.css when scroll into view -->
+        <script src="js/wow.min.js"></script>
+        <script>new WOW({mobile: false}).init();</script>
 
     </body>
 
