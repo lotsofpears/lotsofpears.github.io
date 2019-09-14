@@ -1,89 +1,89 @@
 // Styling for the masthead
 
-
 header.masthead {
-    background: url('../images/team-header.jpg') black no-repeat center center scroll;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-    #page-banner {
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    @include background-cover;
-    .intro-text {
-      align-content: center;
-      .intro-heading {
-        font-size: 60px;
-        font-weight: 700;
-        line-height: 60px;
-        margin-bottom: 8px;
-        @include heading-font;
-      }
-      .intro-lead-in {
-        font-size: 18px;
-        font-style: italic;
-        line-height: 25px;
-        margin-bottom: 24px;
-        color: $gray-lighter;
-        @include serif-font;
-      }
-    }
-  }
-  @media(min-width:1200px) {
-    header.masthead {
-    .intro-text {
-      .intro-heading {
-        font-size: 90px;
-        line-height: 90px;
-        margin-bottom: 8px;
-      }
-      .intro-lead-in {
-        font-size: 24px; 
-      }
-    }
-  }
-  }
-  @media(max-width:776px) {
-    header.masthead {
-      .intro-text {
-        .intro-heading {
-          font-size: 50px;
-          line-height: 50px;
-          margin-bottom: 8px;
-        }
-        .intro-lead-in {
-          display: none;
-        }
-        .play {
-          font-size: 50px !important;
-        }
-      }
-    }
-  }
+	background: url('../images/team-header.jpg') black no-repeat center center
+		scroll;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	background-size: cover;
+	#page-banner {
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+	}
+	@include background-cover;
+	.intro-text {
+		align-content: center;
+		.intro-heading {
+			font-size: 60px;
+			font-weight: 700;
+			line-height: 60px;
+			margin-bottom: 8px;
+			@include heading-font;
+		}
+		.intro-lead-in {
+			font-size: 18px;
+			font-style: italic;
+			line-height: 25px;
+			margin-bottom: 24px;
+			color: $gray-lighter;
+			@include serif-font;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	header.masthead {
+		.intro-text {
+			.intro-heading {
+				font-size: 90px;
+				line-height: 90px;
+				margin-bottom: 8px;
+			}
+			.intro-lead-in {
+				font-size: 24px;
+			}
+		}
+	}
+}
+@media (max-width: 776px) {
+	header.masthead {
+		.intro-text {
+			.intro-heading {
+				font-size: 50px;
+				line-height: 50px;
+				margin-bottom: 8px;
+			}
+			.intro-lead-in {
+				display: none;
+			}
+			.play {
+				font-size: 50px !important;
+			}
+		}
+	}
+}
 header .container {
-  position: relative;
-  z-index: 3;
+	position: relative;
+	z-index: 3;
 }
 
 header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.35;
+	z-index: 2;
 }
 
 .theme-color {
-  color: $theme-primary;
-  &:hover {
-    cursor: pointer;
-    color: lighten($theme-primary, 20%);
-  }
+	color: $theme-primary;
+	&:hover {
+		cursor: pointer;
+		color: lighten($theme-primary, 20%);
+	}
 }

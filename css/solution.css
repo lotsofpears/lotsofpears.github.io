@@ -232,7 +232,7 @@ header .overlay {
   height: 100%;
   width: 100%;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.35;
   z-index: 2; }
 
 .theme-color {
@@ -280,16 +280,12 @@ header .overlay {
     max-width: 400px;
     margin: 0 auto;
     padding: 15px;
-    text-align: center;
-    background-color: white; }
+    text-align: center; }
     #workshops .workshops-item .workshops-caption h4 {
-      margin: 0;
       text-transform: none;
       font-size: 16px; }
     #workshops .workshops-item .workshops-caption p {
-      font-size: 16px;
-      font-style: italic;
-      margin: 0;
+      font-size: 10px;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 #workshops * {
