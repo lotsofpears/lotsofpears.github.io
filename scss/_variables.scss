@@ -12,3 +12,9 @@ $gray: lighten($gray-base, 33.5%) !default;
 $gray-light: lighten($gray-base, 46.7%) !default;
 $gray-lighter: lighten($gray-base, 93.5%) !default;
 $footer-color: $gray-darker;
+
+$pill-green: rgb(42, 184, 120);
+$pill-primary: $theme-primary;
+
+$input-btn-focus-width: .2rem !default;
+$btn-focus-width: $input-btn-focus-width !default;

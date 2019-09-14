@@ -1,21 +1,21 @@
 // Global styling for this template
 body {
-  overflow-x: hidden;
-  @include body-font;
+	overflow-x: hidden;
+	@include body-font;
 }
 
 p {
-  line-height: 1.75;
+	line-height: 1.75;
 }
 
 a {
-  color: $theme-primary;
-  &.active,
-  &:active,
-  &:focus,
-  &:hover {
-    color: darken($theme-primary, 10%);
-  }
+	color: $theme-primary;
+	&.active,
+	&:active,
+	&:focus,
+	&:hover {
+		color: darken($theme-primary, 10%);
+	}
 }
 
 h1,
@@ -24,122 +24,125 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
-  @include heading-font;
+	font-weight: 700;
+	@include heading-font;
 }
 
-hr.primary{
-  max-width: 50px;
-  border-width: 3px;
-  border-color: $theme-primary;
+hr.primary {
+	max-width: 50px;
+	border-width: 3px;
+	border-color: $theme-primary;
 }
 
 section {
-  padding: 100px 0;
-  h2.section-heading {
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
-  h3.section-subheading {
-    font-size: 16px;
-    font-weight: 400;
-    font-style: italic;
-    margin-bottom: 75px;
-    text-transform: none;
-    @include serif-font;
-  }
+	padding: 100px 0;
+	h2.section-heading {
+		font-size: 40px;
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+	h3.section-subheading {
+		font-size: 16px;
+		font-weight: 400;
+		font-style: italic;
+		margin-bottom: 75px;
+		text-transform: none;
+		@include serif-font;
+	}
 }
-@media(min-width:768px) {
-  section {
-    padding: 150px 0;
-  }
+@media (min-width: 768px) {
+	section {
+		padding: 150px 0;
+	}
 }
 
 // Highlight color customization
 ::-moz-selection {
-  background: $theme-primary;
-  text-shadow: none;
+	background: $theme-primary;
+	text-shadow: none;
 }
 
 ::selection {
-  background: $theme-primary;
-  text-shadow: none;
+	background: $theme-primary;
+	text-shadow: none;
 }
 
 img::selection {
-  background: transparent;
+	background: transparent;
 }
 
 img::-moz-selection {
-  background: transparent;
+	background: transparent;
 }
 
 body {
-  -webkit-tap-highlight-color: $theme-primary;
+	-webkit-tap-highlight-color: $theme-primary;
 }
 
-.bs-callout-left{
-    padding: 20px;
-    margin: 20px 0;
-    border-left: 1px solid #eee;
-    border-left-width: 5px;
-    border-radius: 3px;
+.bs-callout-left {
+	padding: 20px;
+	margin: 20px 0;
+	border-left: 1px solid #eee;
+	border-left-width: 5px;
+	border-radius: 3px;
 }
-.bs-callout-right{
-    padding: 20px;
-    margin: 20px 0;
-    border-right: 1px solid #eee;
-    border-right-width: 5px;
-    border-radius: 3px;
+.bs-callout-right {
+	padding: 20px;
+	margin: 20px 0;
+	border-right: 1px solid #eee;
+	border-right-width: 5px;
+	border-radius: 3px;
 }
-.bs-callout-no-border{
-  border: none;
+.bs-callout-no-border {
+	border: none;
 }
 
 .bs-callout h4 {
-    margin-top: 0;
-    margin-bottom: 5px;
+	margin-top: 0;
+	margin-bottom: 5px;
 }
 .bs-callout p:last-child {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 .bs-callout code {
-    border-radius: 3px;
+	border-radius: 3px;
 }
-.bs-callout+.bs-callout {
-    margin-top: -5px;
+.bs-callout + .bs-callout {
+	margin-top: -5px;
 }
 
 // main theme
 .bs-callout-main-theme {
-    border-left-color: $theme-primary;
+	border-left-color: $theme-primary;
 }
 .bs-callout-main-theme h4 {
-    color: $theme-primary;
+	color: $theme-primary;
 }
 
 // default
 .bs-callout-default {
-    border-color: $gray-light;
+	border-color: $gray-light;
 }
 .bs-callout-default h4 {
-    color: $gray-light;
+	color: $gray-light;
 }
-
 
 //testimonial carousel
-.carousel-indicators{
-  li{
-    background-color: $theme-primary;
-  }
-  .active{
-    background-color: $gray-light;
-  }
+.carousel-indicators {
+	li {
+		background-color: $theme-primary;
+	}
+	.active {
+		background-color: $gray-light;
+	}
 }
-.text-color-theme{
-  color: $theme-primary;
+.text-color-theme {
+	color: $theme-primary;
 }
-.text-95{
-  font-size: 95%;
+.text-95 {
+	font-size: 95%;
+}
+
+.no-padding {
+	padding: 0px;
 }

@@ -119,6 +119,9 @@ body {
 .text-95 {
   font-size: 95%; }
 
+.no-padding {
+  padding: 0px; }
+
 #mainNav {
   background-color: #222222; }
   #mainNav .navbar-toggler {
@@ -247,8 +250,6 @@ header .overlay {
   #workshops .workshops-item .workshops-link {
     position: relative;
     display: block;
-    max-width: 400px;
-    margin: 0 auto;
     cursor: pointer; }
     #workshops .workshops-item .workshops-link .workshops-hover {
       border-radius: calc(.25rem - 1px);
@@ -277,8 +278,6 @@ header .overlay {
         #workshops .workshops-item .workshops-link .workshops-hover .workshops-hover-content h4 {
           margin: 0; }
   #workshops .workshops-item .workshops-caption {
-    max-width: 400px;
-    margin: 0 auto;
     padding: 15px;
     text-align: center; }
     #workshops .workshops-item .workshops-caption h4 {
@@ -407,6 +406,68 @@ section#contact {
   section#contact .text-danger {
     color: #e74c3c; }
 
+#experience .row-item {
+  margin-bottom: 30px; }
+
+#experience .experience-caption {
+  padding: 15px;
+  text-align: center; }
+  #experience .experience-caption .what {
+    font-size: 16px;
+    font-weight: bold; }
+  #experience .experience-caption .who {
+    font-size: 14px;
+    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-bottom: 8px; }
+  #experience .experience-caption .where {
+    font-size: 10px;
+    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column; }
+
+#experience .no-padding {
+  padding: 0; }
+
+#experience .margin-top {
+  margin-top: 16px; }
+
+#experience .pill-bg-primary {
+  background-color: #fed136; }
+
+#experience .pill-bg-green {
+  background-color: #2ab878; }
+
+#experience .pill-caption .what {
+  font-size: 12px;
+  font-weight: bold; }
+
+#experience .pill-caption .where {
+  font-size: 12px;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+#experience .pill-caption .flex-c {
+  display: flex;
+  flex-direction: column; }
+
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+  #experience .experience-caption .what {
+    line-height: 1;
+    font-size: 12px; }
+  #experience .experience-caption .who {
+    font-size: 10px; }
+  #experience .experience-caption .where {
+    font-size: 8px; }
+  #experience .pill-caption .what {
+    font-size: 8px; }
+  #experience .pill-caption .where {
+    font-size: 8px; } }
+
+@media only screen and (min-width: 0px) and (max-width: 470px) {
+  #experience .pill-caption .what {
+    font-size: 6px; }
+  #experience .pill-caption .where {
+    font-size: 6px; } }
+
 .speakers-member {
   margin-bottom: 50px;
   text-align: center; }
@@ -501,6 +562,30 @@ ul.social-buttons {
   .btn-primary .badge {
     color: #fed136;
     background-color: white; }
+
+.btn-outline-primary {
+  font-weight: 700;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #fed136;
+  border-color: #fed136; }
+  .btn-outline-primary:hover {
+    color: color-yiq(#fed136);
+    background-color: #fed136;
+    border-color: #fed136; }
+  .btn-outline-primary:focus, .btn-outline-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(254, 209, 54, 0.5); }
+  .btn-outline-primary.disabled, .btn-outline-primary:disabled {
+    color: #fed136;
+    background-color: transparent; }
+  .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-primary.dropdown-toggle {
+    color: color-yiq(#fed136);
+    background-color: #fed136;
+    border-color: #fed136; }
+    .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-primary.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(254, 209, 54, 0.5); }
 
 .btn-xl {
   font-size: 18px;
